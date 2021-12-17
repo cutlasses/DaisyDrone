@@ -61,12 +61,7 @@ int main(void)
 	hw.Configure();
 	hw.Init();
 
-	hw.StartLog(true/*block until serial connection opened*/);
-
-    Led led1;
-    //Initialize led1. We'll plug it into pin 28.
-    //false here indicates the value is uninverted
-    led1.Init(hw.GetPin(28), false);	
+	hw.StartLog(false/*block until serial connection opened*/);
 
 	init_adc();
 
@@ -93,14 +88,9 @@ int main(void)
 		for( int t = 0; t < NUM_TONES; ++t )
 		{
 			const float pot_val = hw.adc.GetFloat(t);
-			//const int pot_val_int = pot_val * 1000;
-			//hw.Print("%d ", pot_val_int);
 
 			oscillators[t].SetAmp(pot_val);
 		}
-
-		led1.Set(hw.adc.GetFloat(0));
-		led1.Update();
 
         //wait 1 ms
         System::Delay(1);		
