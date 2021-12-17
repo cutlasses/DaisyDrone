@@ -4,6 +4,9 @@
 using namespace daisy;
 using namespace daisysp;
 
+const int NUM_POTS(2);
+const int pot_pins[NUM_POTS] = { 15, 16 };
+
 DaisySeed hw;
 
 Oscillator osc;
@@ -19,6 +22,17 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 	}
 }
 
+void init_pots()
+{
+	AdcChannelConfig adc_config[NUM_POTS];
+	for( int p = 0; p < NUM_POTS; ++p )
+	{
+		adc_config[p].InitSingle(hw.GetPin(pot_pins[p]));
+	}
+	hw.adc.Init(adc_config, NUM_POTS);
+    hw.adc.Start();
+}
+
 int main(void)
 {
 	hw.Configure();
@@ -31,12 +45,7 @@ int main(void)
     //false here indicates the value is uninverted
     led1.Init(hw.GetPin(28), false);	
 
-	// setup pots
-    AdcChannelConfig adcConfig[2];
-    adcConfig[0].InitSingle(hw.GetPin(15));
-	adcConfig[1].InitSingle(hw.GetPin(16));
-    hw.adc.Init(adcConfig, 2);
-    hw.adc.Start();
+	init_pots();
 
     //Set up oscillator
     osc.Init( hw.AudioSampleRate() );
@@ -50,15 +59,17 @@ int main(void)
 	hw.PrintLine("Startup complete");
 
 	while(1)
-	{
+	{	
+		for( int p = 0; p < NUM_POTS; ++p )
+		{
+			const int pot_val = hw.adc.GetFloat(p) * 1000.0f;
+			hw.Print("\t%d", pot_val);
+		}
+		hw.PrintLine("");
+
 		const float pot_val = hw.adc.GetFloat(0);
 		osc.SetAmp(pot_val);
 		osc.SetFreq(pot_val*2000.0f);
-	
-		const int pot_val_int = pot_val*1000;
-		const int pot2_val_int = hw.adc.GetFloat(1) * 1000;
-		hw.PrintLine("pot 1 %d", pot_val_int);
-		hw.PrintLine("pot 2 %d", pot2_val_int);
 
 		led1.Set(pot_val);
 		led1.Update();
