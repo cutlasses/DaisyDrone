@@ -24,7 +24,7 @@ int main(void)
 	hw.Configure();
 	hw.Init();
 
-	hw.StartLog(true); // block until serial connection opened
+	hw.StartLog(false/*block until serial connection opened*/);
 
     Led led1;
     //Initialize led1. We'll plug it into pin 28.
@@ -32,9 +32,10 @@ int main(void)
     led1.Init(hw.GetPin(28), false);	
 
 	// setup pots
-    AdcChannelConfig adcConfig;
-    adcConfig.InitSingle(hw.GetPin(15));
-    hw.adc.Init(&adcConfig, 1);
+    AdcChannelConfig adcConfig[2];
+    adcConfig[0].InitSingle(hw.GetPin(15));
+	adcConfig[1].InitSingle(hw.GetPin(16));
+    hw.adc.Init(adcConfig, 2);
     hw.adc.Start();
 
     //Set up oscillator
@@ -53,7 +54,11 @@ int main(void)
 		const float pot_val = hw.adc.GetFloat(0);
 		osc.SetAmp(pot_val);
 		osc.SetFreq(pot_val*2000.0f);
-		hw.PrintLine("pot %f", pot_val);
+	
+		const int pot_val_int = pot_val*1000;
+		const int pot2_val_int = hw.adc.GetFloat(1) * 1000;
+		hw.PrintLine("pot 1 %d", pot_val_int);
+		hw.PrintLine("pot 2 %d", pot2_val_int);
 
 		led1.Set(pot_val);
 		led1.Update();
