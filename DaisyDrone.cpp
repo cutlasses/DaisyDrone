@@ -24,6 +24,8 @@ int main(void)
 	hw.Configure();
 	hw.Init();
 
+	hw.StartLog(true); // block until serial connection opened
+
     Led led1;
     //Initialize led1. We'll plug it into pin 28.
     //false here indicates the value is uninverted
@@ -31,7 +33,7 @@ int main(void)
 
 	// setup pots
     AdcChannelConfig adcConfig;
-    adcConfig.InitSingle(hw.GetPin(21));
+    adcConfig.InitSingle(hw.GetPin(15));
     hw.adc.Init(&adcConfig, 1);
     hw.adc.Start();
 
@@ -51,7 +53,7 @@ int main(void)
 		const float pot_val = hw.adc.GetFloat(0);
 		osc.SetAmp(pot_val);
 		osc.SetFreq(pot_val*2000.0f);
-		hw.PrintLine("pot %d", pot_val);
+		hw.PrintLine("pot %f", pot_val);
 
 		led1.Set(pot_val);
 		led1.Update();
