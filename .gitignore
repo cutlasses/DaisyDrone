@@ -38,3 +38,10 @@ build/DaisyDrone.lst
 build/DaisyDrone.map
 build/DaisyDrone.o
 build/startup_stm32h750xx.lst
+build/startup_stm32h750xx.lst
+build/DaisyDrone.o
+build/DaisyDrone.map
+build/DaisyDrone.lst
+build/DaisyDrone.hex
+build/DaisyDrone.elf
+build/DaisyDrone.bin

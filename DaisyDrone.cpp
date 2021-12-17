@@ -4,33 +4,56 @@
 using namespace daisy;
 using namespace daisysp;
 
-const int NUM_POTS(2);
-const int pot_pins[NUM_POTS] = { 15, 16 };
-
 DaisySeed hw;
 
-Oscillator osc;
+const int NUM_TONES(2);
+const int pot_pins[NUM_TONES] = { 15, 16 };
+Oscillator oscillators[NUM_TONES];
+
 
 void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
 {
 	for (size_t i = 0; i < size; i++)
 	{
-		const float osc_out = osc.Process();
+		float osc_out = 0.0f;
+		for( int o = 0; o < NUM_TONES; ++o )
+		{
+			osc_out += oscillators[o].Process();
+		}
+		osc_out /= NUM_TONES;
 
 		out[0][i] = osc_out;
 		out[1][i] = osc_out;
 	}
 }
 
-void init_pots()
+void init_adc()
 {
-	AdcChannelConfig adc_config[NUM_POTS];
-	for( int p = 0; p < NUM_POTS; ++p )
+	AdcChannelConfig adc_config[NUM_TONES];
+	for( int t = 0; t < NUM_TONES; ++t )
 	{
-		adc_config[p].InitSingle(hw.GetPin(pot_pins[p]));
+		adc_config[t].InitSingle(hw.GetPin(pot_pins[t]));
 	}
-	hw.adc.Init(adc_config, NUM_POTS);
+	hw.adc.Init(adc_config, NUM_TONES);
     hw.adc.Start();
+}
+
+void set_tones(float base_frequency)
+{
+	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
+
+	const int semitones[] = { 0, 3, 7, 12 };
+	
+	for( int t = 0; t < NUM_TONES; ++t )
+	{
+		const int semitone = semitones[t];
+
+		const float freq_mult	= powf( 2.0f, semitone / 12.0f );
+		const float freq		= base_frequency * freq_mult;
+		oscillators[t].SetFreq(freq);
+
+		hw.PrintLine("%d %d %d", semitone, int(freq_mult * 100), int(freq * 100));
+	}
 }
 
 int main(void)
@@ -38,20 +61,27 @@ int main(void)
 	hw.Configure();
 	hw.Init();
 
-	hw.StartLog(false/*block until serial connection opened*/);
+	hw.StartLog(true/*block until serial connection opened*/);
 
     Led led1;
     //Initialize led1. We'll plug it into pin 28.
     //false here indicates the value is uninverted
     led1.Init(hw.GetPin(28), false);	
 
-	init_pots();
+	init_adc();
 
-    //Set up oscillator
-    osc.Init( hw.AudioSampleRate() );
-    osc.SetWaveform(osc.WAVE_SIN);
-    osc.SetAmp(0.5f);
-    osc.SetFreq(440);
+    //Set up oscillators
+	const float sample_rate = hw.AudioSampleRate();
+	for( Oscillator& osc : oscillators )
+	{
+		osc.Init(sample_rate);
+		osc.SetWaveform(osc.WAVE_SIN);
+		osc.SetAmp(0.0f);
+	}
+
+	//const float base_frequency = 65.41f; // C2
+	float base_frequency = 440.0f;
+	set_tones(base_frequency);
 
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
 	hw.StartAudio(audio_callback);
@@ -60,18 +90,16 @@ int main(void)
 
 	while(1)
 	{	
-		for( int p = 0; p < NUM_POTS; ++p )
+		for( int t = 0; t < NUM_TONES; ++t )
 		{
-			const int pot_val = hw.adc.GetFloat(p) * 1000.0f;
-			hw.Print("\t%d", pot_val);
+			const float pot_val = hw.adc.GetFloat(t);
+			//const int pot_val_int = pot_val * 1000;
+			//hw.Print("%d ", pot_val_int);
+
+			oscillators[t].SetAmp(pot_val);
 		}
-		hw.PrintLine("");
 
-		const float pot_val = hw.adc.GetFloat(0);
-		osc.SetAmp(pot_val);
-		osc.SetFreq(pot_val*2000.0f);
-
-		led1.Set(pot_val);
+		led1.Set(hw.adc.GetFloat(0));
 		led1.Update();
 
         //wait 1 ms

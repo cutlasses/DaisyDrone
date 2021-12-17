@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -56,9 +56,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              		@ link register save eliminated.
-  35              	.LBB89:
-  36              	.LBI89:
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 2
+  35              	.LBB92:
+  36              	.LBI92:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 2
 
 
   37              		.file 2 "../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h"
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   54:../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h **** 
   55:../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h ****         SysClkFreq cpu_freq;
   56:../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h ****         bool       use_dcache;
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 3
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 3
 
 
   57:../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h ****         bool       use_icache;
@@ -145,9 +145,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   78:../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h ****     ~System() {}
   38              		.loc 2 78 5 view .LVU1
   39              		.loc 2 78 5 is_stmt 0 view .LVU2
-  40              	.LBE89:
-  41              	.LBB90:
-  42              	.LBI90:
+  40              	.LBE92:
+  41              	.LBB93:
+  42              	.LBI93:
   43              		.file 3 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h"
    1:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h **** #pragma once
    2:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h **** #ifndef DSY_HID_USB_H
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   27:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h **** 
   28:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h ****     /** Specified which of the two USB Peripherals to initialize. */
   29:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h ****     enum UsbPeriph
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 4
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 4
 
 
   30:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h ****     {
@@ -196,9 +196,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   42:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h ****     ~UsbHandle() {}
   44              		.loc 3 42 5 is_stmt 1 view .LVU3
   45              		.loc 3 42 5 is_stmt 0 view .LVU4
-  46              	.LBE90:
-  47              	.LBB91:
-  48              	.LBI91:
+  46              	.LBE93:
+  47              	.LBB94:
+  48              	.LBI94:
   49              		.file 4 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h"
    1:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h **** #pragma once
    2:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h **** #ifndef DSY_ADC_H
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   36:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h ****      */
   37:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h ****     void InitSingle(dsy_gpio_pin pin);
   38:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h **** 
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 5
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 5
 
 
   39:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h ****     /** 
@@ -290,15 +290,15 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   85:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h ****     ~AdcHandle() {}
   50              		.loc 4 85 5 is_stmt 1 view .LVU5
   51              		.loc 4 85 5 is_stmt 0 view .LVU6
-  52              	.LBE91:
-  53              	.LBB92:
-  54              	.LBI92:
+  52              	.LBE94:
+  53              	.LBB95:
+  54              	.LBI95:
   55              		.file 5 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h"
    1:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h **** #ifndef DSY_AUDIO_H
    2:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h **** #define DSY_AUDIO_H /**< & */
    3:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h **** 
    4:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h **** #include "per/sai.h"
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 6
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 6
 
 
    5:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h **** 
@@ -358,408 +358,369 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   59:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h ****                                               InterleavingOutputBuffer out,
   60:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h ****                                               size_t                   size);
   61:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h **** 
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 7
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 7
 
 
   62:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h ****     AudioHandle() : pimpl_(nullptr) {}
   63:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
   56              		.loc 5 63 5 is_stmt 1 view .LVU7
   57              		.loc 5 63 5 is_stmt 0 view .LVU8
-  58              	.LBE92:
+  58              	.LBE95:
   59              		.loc 1 22 19 view .LVU9
   60 0000 7047     		bx	lr
   61              		.cfi_endproc
   62              	.LFE2040:
   64              		.weak	_ZN5daisy9DaisySeedD1Ev
   65              		.thumb_set _ZN5daisy9DaisySeedD1Ev,_ZN5daisy9DaisySeedD2Ev
-  66 0002 00BF     		.section	.text._ZN7daisysp10OscillatorD2Ev,"axG",%progbits,_ZN7daisysp10OscillatorD5Ev,comdat
+  66 0002 00BF     		.section	.text.__tcf_0,"ax",%progbits
   67              		.align	1
   68              		.p2align 2,,3
-  69              		.weak	_ZN7daisysp10OscillatorD2Ev
-  70              		.syntax unified
-  71              		.thumb
-  72              		.thumb_func
-  74              	_ZN7daisysp10OscillatorD2Ev:
-  75              	.LVL1:
-  76              	.LFB3730:
-  77              		.file 6 "../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h"
-   1:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #pragma once
-   2:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #ifndef DSY_OSCILLATOR_H
-   3:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #define DSY_OSCILLATOR_H
-   4:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #include <stdint.h>
-   5:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #include "Utility/dsp.h"
-   6:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #ifdef __cplusplus
-   7:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
-   8:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** namespace daisysp
-   9:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** {
-  10:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** /** Synthesis of several waveforms, including polyBLEP bandlimited waveforms.
-  11:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** */
-  12:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** class Oscillator
-  13:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** {
-  14:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****   public:
-  15:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     Oscillator() {}
-  16:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
-  78              		.loc 6 16 5 is_stmt 1 view -0
-  79              		.cfi_startproc
-  80              		@ args = 0, pretend = 0, frame = 0
-  81              		@ frame_needed = 0, uses_anonymous_args = 0
-  82              		@ link register save eliminated.
-  83              		.loc 6 16 20 is_stmt 0 view .LVU11
-  84 0000 7047     		bx	lr
-  85              		.cfi_endproc
-  86              	.LFE3730:
-  88              		.weak	_ZN7daisysp10OscillatorD1Ev
-  89              		.thumb_set _ZN7daisysp10OscillatorD1Ev,_ZN7daisysp10OscillatorD2Ev
-  90 0002 00BF     		.section	.text._Z14audio_callbackPKPKfPPfj,"ax",%progbits
-  91              		.align	1
-  92              		.p2align 2,,3
-  93              		.global	_Z14audio_callbackPKPKfPPfj
-  94              		.syntax unified
-  95              		.thumb
-  96              		.thumb_func
-  98              	_Z14audio_callbackPKPKfPPfj:
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 8
-
-
-  99              	.LVL2:
- 100              	.LFB4268:
- 101              		.file 7 "DaisyDrone.cpp"
+  69              		.syntax unified
+  70              		.thumb
+  71              		.thumb_func
+  73              	__tcf_0:
+  74              	.LFB4831:
+  75              		.file 6 "DaisyDrone.cpp"
    1:DaisyDrone.cpp **** #include "daisy_seed.h"
    2:DaisyDrone.cpp **** #include "daisysp.h"
    3:DaisyDrone.cpp **** 
    4:DaisyDrone.cpp **** using namespace daisy;
    5:DaisyDrone.cpp **** using namespace daisysp;
    6:DaisyDrone.cpp **** 
-   7:DaisyDrone.cpp **** const int NUM_POTS(2);
-   8:DaisyDrone.cpp **** const int pot_pins[NUM_POTS] = { 15, 16 };
-   9:DaisyDrone.cpp **** 
-  10:DaisyDrone.cpp **** DaisySeed hw;
-  11:DaisyDrone.cpp **** 
-  12:DaisyDrone.cpp **** Oscillator osc;
+   7:DaisyDrone.cpp **** DaisySeed hw;
+   8:DaisyDrone.cpp **** 
+   9:DaisyDrone.cpp **** const int NUM_TONES(2);
+  10:DaisyDrone.cpp **** const int pot_pins[NUM_TONES] = { 15, 16 };
+  11:DaisyDrone.cpp **** Oscillator oscillators[NUM_TONES];
+  76              		.loc 6 11 12 is_stmt 1 view -0
+  77              		.cfi_startproc
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 0, uses_anonymous_args = 0
+  80              		@ link register save eliminated.
+  81              		.loc 6 11 12 is_stmt 0 view .LVU11
+  82 0000 7047     		bx	lr
+  83              		.cfi_endproc
+  84              	.LFE4831:
+  86 0002 00BF     		.section	.text._Z14audio_callbackPKPKfPPfj,"ax",%progbits
+  87              		.align	1
+  88              		.p2align 2,,3
+  89              		.global	_Z14audio_callbackPKPKfPPfj
+  90              		.syntax unified
+  91              		.thumb
+  92              		.thumb_func
+  94              	_Z14audio_callbackPKPKfPPfj:
+  95              	.LVL1:
+  96              	.LFB4268:
+  12:DaisyDrone.cpp **** 
   13:DaisyDrone.cpp **** 
   14:DaisyDrone.cpp **** void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
   15:DaisyDrone.cpp **** {
- 102              		.loc 7 15 1 is_stmt 1 view -0
- 103              		.cfi_startproc
- 104              		@ args = 0, pretend = 0, frame = 0
- 105              		@ frame_needed = 0, uses_anonymous_args = 0
+  97              		.loc 6 15 1 is_stmt 1 view -0
+  98              		.cfi_startproc
+  99              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 8
+
+
+ 100              		@ frame_needed = 0, uses_anonymous_args = 0
   16:DaisyDrone.cpp **** 	for (size_t i = 0; i < size; i++)
- 106              		.loc 7 16 2 view .LVU13
- 107              	.LBB93:
- 108              		.loc 7 16 23 view .LVU14
- 109 0000 A2B1     		cbz	r2, .L12
- 110              	.LBE93:
+ 101              		.loc 6 16 2 view .LVU13
+ 102              	.LBB96:
+ 103              		.loc 6 16 23 view .LVU14
+ 104 0000 2AB3     		cbz	r2, .L12
+ 105              	.LBE96:
   15:DaisyDrone.cpp **** 	for (size_t i = 0; i < size; i++)
- 111              		.loc 7 15 1 is_stmt 0 view .LVU15
- 112 0002 70B5     		push	{r4, r5, r6, lr}
- 113              		.cfi_def_cfa_offset 16
- 114              		.cfi_offset 4, -16
- 115              		.cfi_offset 5, -12
- 116              		.cfi_offset 6, -8
- 117              		.cfi_offset 14, -4
- 118 0004 0D46     		mov	r5, r1
- 119 0006 1646     		mov	r6, r2
- 120              	.LBB97:
- 121              		.loc 7 16 14 view .LVU16
- 122 0008 0024     		movs	r4, #0
- 123              	.LVL3:
- 124              	.L6:
- 125              	.LBB94:
+ 106              		.loc 6 15 1 is_stmt 0 view .LVU15
+ 107 0002 70B5     		push	{r4, r5, r6, lr}
+ 108              		.cfi_def_cfa_offset 16
+ 109              		.cfi_offset 4, -16
+ 110              		.cfi_offset 5, -12
+ 111              		.cfi_offset 6, -8
+ 112              		.cfi_offset 14, -4
+ 113 0004 0D46     		mov	r5, r1
+ 114 0006 1646     		mov	r6, r2
+ 115              	.LBB102:
+ 116              		.loc 6 16 14 view .LVU16
+ 117 0008 0024     		movs	r4, #0
+ 118              	.LBE102:
+  15:DaisyDrone.cpp **** 	for (size_t i = 0; i < size; i++)
+ 119              		.loc 6 15 1 view .LVU17
+ 120 000a 2DED028B 		vpush.64	{d8}
+ 121              		.cfi_def_cfa_offset 24
+ 122              		.cfi_offset 80, -24
+ 123              		.cfi_offset 81, -20
+ 124              	.LVL2:
+ 125              	.L6:
+ 126              	.LBB103:
+ 127              	.LBB97:
+ 128              	.LBB98:
   17:DaisyDrone.cpp **** 	{
-  18:DaisyDrone.cpp **** 		const float osc_out = osc.Process();
- 126              		.loc 7 18 3 is_stmt 1 discriminator 2 view .LVU17
- 127              		.loc 7 18 36 is_stmt 0 discriminator 2 view .LVU18
- 128 000a 0948     		ldr	r0, .L15
- 129 000c FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
- 130              	.LVL4:
-  19:DaisyDrone.cpp **** 
-  20:DaisyDrone.cpp **** 		out[0][i] = osc_out;
-  21:DaisyDrone.cpp **** 		out[1][i] = osc_out;
- 131              		.loc 7 21 13 discriminator 2 view .LVU19
- 132 0010 D5E90003 		ldrd	r0, r3, [r5]
- 133              	.LVL5:
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 9
+  18:DaisyDrone.cpp **** 		float osc_out = 0.0f;
+  19:DaisyDrone.cpp **** 		for( int o = 0; o < NUM_TONES; ++o )
+ 129              		.loc 6 19 21 is_stmt 1 view .LVU18
+  20:DaisyDrone.cpp **** 		{
+  21:DaisyDrone.cpp **** 			osc_out += oscillators[o].Process();
+ 130              		.loc 6 21 4 view .LVU19
+ 131              		.loc 6 21 12 is_stmt 0 view .LVU20
+ 132 000e 9FED108A 		vldr.32	s16, .L15
+ 133              		.loc 6 21 37 view .LVU21
+ 134 0012 1048     		ldr	r0, .L15+4
+ 135 0014 FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 136              	.LVL3:
+ 137              		.loc 6 21 12 view .LVU22
+ 138 0018 30EE088A 		vadd.f32	s16, s0, s16
+ 139              	.LVL4:
+  19:DaisyDrone.cpp **** 		{
+ 140              		.loc 6 19 3 is_stmt 1 view .LVU23
+  19:DaisyDrone.cpp **** 		{
+ 141              		.loc 6 19 21 view .LVU24
+ 142              		.loc 6 21 4 view .LVU25
+ 143              		.loc 6 21 37 is_stmt 0 view .LVU26
+ 144 001c 0E48     		ldr	r0, .L15+8
+ 145 001e FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 146              	.LVL5:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 9
 
 
-  20:DaisyDrone.cpp **** 		out[1][i] = osc_out;
- 134              		.loc 7 20 3 is_stmt 1 discriminator 2 view .LVU20
-  20:DaisyDrone.cpp **** 		out[1][i] = osc_out;
- 135              		.loc 7 20 13 is_stmt 0 discriminator 2 view .LVU21
- 136 0014 00EB8400 		add	r0, r0, r4, lsl #2
- 137              		.loc 7 21 13 discriminator 2 view .LVU22
- 138 0018 03EB8403 		add	r3, r3, r4, lsl #2
- 139              	.LBE94:
-  16:DaisyDrone.cpp **** 	{
- 140              		.loc 7 16 2 discriminator 2 view .LVU23
- 141 001c 0134     		adds	r4, r4, #1
- 142              	.LVL6:
- 143              	.LBB95:
-  20:DaisyDrone.cpp **** 		out[1][i] = osc_out;
- 144              		.loc 7 20 13 discriminator 2 view .LVU24
- 145 001e 80ED000A 		vstr.32	s0, [r0]
- 146              		.loc 7 21 3 is_stmt 1 discriminator 2 view .LVU25
- 147              	.LBE95:
-  16:DaisyDrone.cpp **** 	{
- 148              		.loc 7 16 23 is_stmt 0 discriminator 2 view .LVU26
- 149 0022 A642     		cmp	r6, r4
- 150              	.LBB96:
- 151              		.loc 7 21 13 discriminator 2 view .LVU27
- 152 0024 83ED000A 		vstr.32	s0, [r3]
- 153              	.LBE96:
-  16:DaisyDrone.cpp **** 	{
- 154              		.loc 7 16 2 is_stmt 1 discriminator 2 view .LVU28
- 155              	.LVL7:
-  16:DaisyDrone.cpp **** 	{
- 156              		.loc 7 16 23 discriminator 2 view .LVU29
- 157 0028 EFD1     		bne	.L6
- 158              	.LBE97:
-  22:DaisyDrone.cpp **** 	}
-  23:DaisyDrone.cpp **** }
- 159              		.loc 7 23 1 is_stmt 0 view .LVU30
- 160 002a 70BD     		pop	{r4, r5, r6, pc}
- 161              	.LVL8:
- 162              	.L12:
- 163              		.cfi_def_cfa_offset 0
- 164              		.cfi_restore 4
- 165              		.cfi_restore 5
- 166              		.cfi_restore 6
- 167              		.cfi_restore 14
- 168              		.loc 7 23 1 view .LVU31
- 169 002c 7047     		bx	lr
- 170              	.L16:
- 171 002e 00BF     		.align	2
- 172              	.L15:
- 173 0030 00000000 		.word	.LANCHOR0
- 174              		.cfi_endproc
- 175              	.LFE4268:
- 177              		.section	.text._Z9init_potsv,"ax",%progbits
- 178              		.align	1
- 179              		.p2align 2,,3
- 180              		.global	_Z9init_potsv
- 181              		.syntax unified
- 182              		.thumb
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 10
-
-
- 183              		.thumb_func
- 185              	_Z9init_potsv:
- 186              	.LFB4269:
+ 147              	.LBE98:
+  22:DaisyDrone.cpp **** 		}
+  23:DaisyDrone.cpp **** 		osc_out /= NUM_TONES;
+ 148              		.loc 6 23 11 view .LVU27
+ 149 0022 F6EE007A 		vmov.f32	s15, #5.0e-1
+ 150              	.LBB99:
+  21:DaisyDrone.cpp **** 		}
+ 151              		.loc 6 21 12 view .LVU28
+ 152 0026 38EE000A 		vadd.f32	s0, s16, s0
+ 153              	.LVL6:
+  19:DaisyDrone.cpp **** 		{
+ 154              		.loc 6 19 3 is_stmt 1 view .LVU29
+  19:DaisyDrone.cpp **** 		{
+ 155              		.loc 6 19 21 view .LVU30
+ 156              	.LBE99:
+ 157              		.loc 6 23 3 view .LVU31
   24:DaisyDrone.cpp **** 
-  25:DaisyDrone.cpp **** void init_pots()
-  26:DaisyDrone.cpp **** {
- 187              		.loc 7 26 1 is_stmt 1 view -0
- 188              		.cfi_startproc
- 189              		@ args = 0, pretend = 0, frame = 40
- 190              		@ frame_needed = 0, uses_anonymous_args = 0
-  27:DaisyDrone.cpp **** 	AdcChannelConfig adc_config[NUM_POTS];
- 191              		.loc 7 27 2 view .LVU33
-  28:DaisyDrone.cpp **** 	for( int p = 0; p < NUM_POTS; ++p )
- 192              		.loc 7 28 2 view .LVU34
- 193              	.LVL9:
- 194              	.LBB98:
- 195              		.loc 7 28 20 view .LVU35
-  29:DaisyDrone.cpp **** 	{
-  30:DaisyDrone.cpp **** 		adc_config[p].InitSingle(hw.GetPin(pot_pins[p]));
- 196              		.loc 7 30 3 view .LVU36
- 197              	.LBE98:
-  26:DaisyDrone.cpp **** 	AdcChannelConfig adc_config[NUM_POTS];
- 198              		.loc 7 26 1 is_stmt 0 view .LVU37
- 199 0000 10B5     		push	{r4, lr}
- 200              		.cfi_def_cfa_offset 8
- 201              		.cfi_offset 4, -8
- 202              		.cfi_offset 14, -4
- 203              	.LBB99:
- 204              		.loc 7 30 27 view .LVU38
- 205 0002 0F20     		movs	r0, #15
- 206              	.LBE99:
-  26:DaisyDrone.cpp **** 	AdcChannelConfig adc_config[NUM_POTS];
- 207              		.loc 7 26 1 view .LVU39
- 208 0004 8AB0     		sub	sp, sp, #40
- 209              		.cfi_def_cfa_offset 48
- 210              	.LBB100:
- 211              		.loc 7 30 27 view .LVU40
- 212 0006 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
- 213              	.LVL10:
- 214 000a 0346     		mov	r3, r0	@ movhi
- 215 000c 01A8     		add	r0, sp, #4
- 216              	.LBE100:
-  31:DaisyDrone.cpp **** 	}
-  32:DaisyDrone.cpp **** 	hw.adc.Init(adc_config, NUM_POTS);
- 217              		.loc 7 32 13 view .LVU41
- 218 000e 0E4C     		ldr	r4, .L19
- 219              	.LBB101:
-  30:DaisyDrone.cpp **** 	}
- 220              		.loc 7 30 27 view .LVU42
- 221 0010 ADF80030 		strh	r3, [sp]	@ movhi
- 222 0014 0099     		ldr	r1, [sp]
- 223 0016 FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
- 224              	.LVL11:
-  28:DaisyDrone.cpp **** 	{
- 225              		.loc 7 28 2 is_stmt 1 view .LVU43
-  28:DaisyDrone.cpp **** 	{
- 226              		.loc 7 28 20 view .LVU44
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 11
+  25:DaisyDrone.cpp **** 		out[0][i] = osc_out;
+  26:DaisyDrone.cpp **** 		out[1][i] = osc_out;
+ 158              		.loc 6 26 13 is_stmt 0 view .LVU32
+ 159 002a D5E90003 		ldrd	r0, r3, [r5]
+  23:DaisyDrone.cpp **** 
+ 160              		.loc 6 23 11 view .LVU33
+ 161 002e 20EE270A 		vmul.f32	s0, s0, s15
+ 162              	.LVL7:
+  25:DaisyDrone.cpp **** 		out[1][i] = osc_out;
+ 163              		.loc 6 25 3 is_stmt 1 view .LVU34
+  25:DaisyDrone.cpp **** 		out[1][i] = osc_out;
+ 164              		.loc 6 25 13 is_stmt 0 view .LVU35
+ 165 0032 00EB8400 		add	r0, r0, r4, lsl #2
+ 166              		.loc 6 26 13 view .LVU36
+ 167 0036 03EB8403 		add	r3, r3, r4, lsl #2
+ 168              	.LBE97:
+  16:DaisyDrone.cpp **** 	{
+ 169              		.loc 6 16 2 view .LVU37
+ 170 003a 0134     		adds	r4, r4, #1
+ 171              	.LVL8:
+ 172              	.LBB100:
+  25:DaisyDrone.cpp **** 		out[1][i] = osc_out;
+ 173              		.loc 6 25 13 view .LVU38
+ 174 003c 80ED000A 		vstr.32	s0, [r0]
+ 175              		.loc 6 26 3 is_stmt 1 view .LVU39
+ 176              	.LBE100:
+  16:DaisyDrone.cpp **** 	{
+ 177              		.loc 6 16 23 is_stmt 0 view .LVU40
+ 178 0040 A642     		cmp	r6, r4
+ 179              	.LBB101:
+ 180              		.loc 6 26 13 view .LVU41
+ 181 0042 83ED000A 		vstr.32	s0, [r3]
+ 182              	.LBE101:
+  16:DaisyDrone.cpp **** 	{
+ 183              		.loc 6 16 2 is_stmt 1 view .LVU42
+ 184              	.LVL9:
+  16:DaisyDrone.cpp **** 	{
+ 185              		.loc 6 16 23 view .LVU43
+ 186 0046 E2D1     		bne	.L6
+ 187              	.LBE103:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 10
 
 
-  30:DaisyDrone.cpp **** 	}
- 227              		.loc 7 30 3 view .LVU45
-  30:DaisyDrone.cpp **** 	}
- 228              		.loc 7 30 27 is_stmt 0 view .LVU46
- 229 001a 1020     		movs	r0, #16
- 230 001c FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
- 231              	.LVL12:
- 232 0020 0346     		mov	r3, r0	@ movhi
- 233 0022 0DF11500 		add	r0, sp, #21
- 234 0026 ADF80030 		strh	r3, [sp]	@ movhi
- 235 002a 0099     		ldr	r1, [sp]
- 236 002c FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
- 237              	.LVL13:
-  28:DaisyDrone.cpp **** 	{
- 238              		.loc 7 28 2 is_stmt 1 view .LVU47
-  28:DaisyDrone.cpp **** 	{
- 239              		.loc 7 28 20 view .LVU48
- 240              	.LBE101:
- 241              		.loc 7 32 2 view .LVU49
- 242              		.loc 7 32 13 is_stmt 0 view .LVU50
- 243 0030 0423     		movs	r3, #4
- 244 0032 0222     		movs	r2, #2
- 245 0034 2046     		mov	r0, r4
- 246 0036 0DEB0301 		add	r1, sp, r3
- 247 003a FFF7FEFF 		bl	_ZN5daisy9AdcHandle4InitEPNS_16AdcChannelConfigEjNS0_12OverSamplingE
- 248              	.LVL14:
-  33:DaisyDrone.cpp ****     hw.adc.Start();
- 249              		.loc 7 33 5 is_stmt 1 view .LVU51
- 250              		.loc 7 33 17 is_stmt 0 view .LVU52
- 251 003e 2046     		mov	r0, r4
- 252 0040 FFF7FEFF 		bl	_ZN5daisy9AdcHandle5StartEv
- 253              	.LVL15:
-  34:DaisyDrone.cpp **** }
- 254              		.loc 7 34 1 view .LVU53
- 255 0044 0AB0     		add	sp, sp, #40
- 256              		.cfi_def_cfa_offset 8
- 257              		@ sp needed
- 258 0046 10BD     		pop	{r4, pc}
- 259              	.L20:
- 260              		.align	2
- 261              	.L19:
- 262 0048 18000000 		.word	.LANCHOR1+24
- 263              		.cfi_endproc
- 264              	.LFE4269:
- 266              		.section	.rodata.main.str1.4,"aMS",%progbits,1
- 267              		.align	2
- 268              	.LC0:
- 269 0000 53746172 		.ascii	"Startup complete\000"
- 269      74757020 
- 269      636F6D70 
- 269      6C657465 
- 269      00
- 270 0011 000000   		.align	2
- 271              	.LC1:
- 272 0014 09256400 		.ascii	"\011%d\000"
- 273              		.align	2
- 274              	.LC2:
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 12
+  27:DaisyDrone.cpp **** 	}
+  28:DaisyDrone.cpp **** }
+ 188              		.loc 6 28 1 is_stmt 0 view .LVU44
+ 189 0048 BDEC028B 		vldm	sp!, {d8}
+ 190              		.cfi_restore 80
+ 191              		.cfi_restore 81
+ 192              		.cfi_def_cfa_offset 16
+ 193 004c 70BD     		pop	{r4, r5, r6, pc}
+ 194              	.LVL10:
+ 195              	.L12:
+ 196              		.cfi_def_cfa_offset 0
+ 197              		.cfi_restore 4
+ 198              		.cfi_restore 5
+ 199              		.cfi_restore 6
+ 200              		.cfi_restore 14
+ 201              		.loc 6 28 1 view .LVU45
+ 202 004e 7047     		bx	lr
+ 203              	.L16:
+ 204              		.align	2
+ 205              	.L15:
+ 206 0050 00000000 		.word	0
+ 207 0054 00000000 		.word	.LANCHOR0
+ 208 0058 28000000 		.word	.LANCHOR0+40
+ 209              		.cfi_endproc
+ 210              	.LFE4268:
+ 212              		.section	.text._Z8init_adcv,"ax",%progbits
+ 213              		.align	1
+ 214              		.p2align 2,,3
+ 215              		.global	_Z8init_adcv
+ 216              		.syntax unified
+ 217              		.thumb
+ 218              		.thumb_func
+ 220              	_Z8init_adcv:
+ 221              	.LFB4269:
+  29:DaisyDrone.cpp **** 
+  30:DaisyDrone.cpp **** void init_adc()
+  31:DaisyDrone.cpp **** {
+ 222              		.loc 6 31 1 is_stmt 1 view -0
+ 223              		.cfi_startproc
+ 224              		@ args = 0, pretend = 0, frame = 40
+ 225              		@ frame_needed = 0, uses_anonymous_args = 0
+  32:DaisyDrone.cpp **** 	AdcChannelConfig adc_config[NUM_TONES];
+ 226              		.loc 6 32 2 view .LVU47
+  33:DaisyDrone.cpp **** 	for( int t = 0; t < NUM_TONES; ++t )
+ 227              		.loc 6 33 2 view .LVU48
+ 228              	.LVL11:
+ 229              	.LBB104:
+ 230              		.loc 6 33 20 view .LVU49
+  34:DaisyDrone.cpp **** 	{
+  35:DaisyDrone.cpp **** 		adc_config[t].InitSingle(hw.GetPin(pot_pins[t]));
+ 231              		.loc 6 35 3 view .LVU50
+ 232              	.LBE104:
+  31:DaisyDrone.cpp **** 	AdcChannelConfig adc_config[NUM_TONES];
+ 233              		.loc 6 31 1 is_stmt 0 view .LVU51
+ 234 0000 10B5     		push	{r4, lr}
+ 235              		.cfi_def_cfa_offset 8
+ 236              		.cfi_offset 4, -8
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 11
 
 
- 275 0018 00       		.ascii	"\000"
- 276              		.section	.text.startup.main,"ax",%progbits
- 277              		.align	1
- 278              		.p2align 2,,3
- 279              		.global	main
- 280              		.syntax unified
- 281              		.thumb
- 282              		.thumb_func
- 284              	main:
- 285              	.LFB4270:
-  35:DaisyDrone.cpp **** 
-  36:DaisyDrone.cpp **** int main(void)
-  37:DaisyDrone.cpp **** {
- 286              		.loc 7 37 1 is_stmt 1 view -0
- 287              		.cfi_startproc
- 288              		@ args = 0, pretend = 0, frame = 32
- 289              		@ frame_needed = 0, uses_anonymous_args = 0
-  38:DaisyDrone.cpp **** 	hw.Configure();
- 290              		.loc 7 38 2 view .LVU55
-  37:DaisyDrone.cpp **** 	hw.Configure();
- 291              		.loc 7 37 1 is_stmt 0 view .LVU56
- 292 0000 10B5     		push	{r4, lr}
- 293              		.cfi_def_cfa_offset 8
- 294              		.cfi_offset 4, -8
- 295              		.cfi_offset 14, -4
- 296              		.loc 7 38 14 view .LVU57
- 297 0002 4948     		ldr	r0, .L24
- 298              	.LBB127:
- 299              	.LBB128:
-  17:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Choices for output waveforms, POLYBLEP are appropriately labeled. Others are naive forms.
-  18:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
-  19:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     enum
-  20:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
-  21:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_SIN,
-  22:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_TRI,
-  23:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_SAW,
-  24:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_RAMP,
-  25:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_SQUARE,
-  26:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_TRI,
-  27:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_SAW,
-  28:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_SQUARE,
-  29:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_LAST,
-  30:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     };
-  31:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
-  32:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
-  33:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Initializes the Oscillator
-  34:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
-  35:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         \param sample_rate - sample rate of the audio engine being run, and the frequency that the 
-  36:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
-  37:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         Defaults:
-  38:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         - freq_ = 100 Hz
-  39:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         - amp_ = 0.5
-  40:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         - waveform_ = sine wave.
-  41:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
-  42:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     void Init(float sample_rate)
-  43:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
-  44:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         sr_        = sample_rate;
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 13
+ 237              		.cfi_offset 14, -4
+ 238              	.LBB105:
+ 239              		.loc 6 35 27 view .LVU52
+ 240 0002 0F20     		movs	r0, #15
+ 241              	.LBE105:
+  31:DaisyDrone.cpp **** 	AdcChannelConfig adc_config[NUM_TONES];
+ 242              		.loc 6 31 1 view .LVU53
+ 243 0004 8AB0     		sub	sp, sp, #40
+ 244              		.cfi_def_cfa_offset 48
+ 245              	.LBB106:
+ 246              		.loc 6 35 27 view .LVU54
+ 247 0006 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 248              	.LVL12:
+ 249 000a 0346     		mov	r3, r0	@ movhi
+ 250 000c 01A8     		add	r0, sp, #4
+ 251              	.LBE106:
+  36:DaisyDrone.cpp **** 	}
+  37:DaisyDrone.cpp **** 	hw.adc.Init(adc_config, NUM_TONES);
+ 252              		.loc 6 37 13 view .LVU55
+ 253 000e 0E4C     		ldr	r4, .L19
+ 254              	.LBB107:
+  35:DaisyDrone.cpp **** 	}
+ 255              		.loc 6 35 27 view .LVU56
+ 256 0010 ADF80030 		strh	r3, [sp]	@ movhi
+ 257 0014 0099     		ldr	r1, [sp]
+ 258 0016 FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
+ 259              	.LVL13:
+  33:DaisyDrone.cpp **** 	{
+ 260              		.loc 6 33 2 is_stmt 1 view .LVU57
+  33:DaisyDrone.cpp **** 	{
+ 261              		.loc 6 33 20 view .LVU58
+  35:DaisyDrone.cpp **** 	}
+ 262              		.loc 6 35 3 view .LVU59
+  35:DaisyDrone.cpp **** 	}
+ 263              		.loc 6 35 27 is_stmt 0 view .LVU60
+ 264 001a 1020     		movs	r0, #16
+ 265 001c FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 266              	.LVL14:
+ 267 0020 0346     		mov	r3, r0	@ movhi
+ 268 0022 0DF11500 		add	r0, sp, #21
+ 269 0026 ADF80030 		strh	r3, [sp]	@ movhi
+ 270 002a 0099     		ldr	r1, [sp]
+ 271 002c FFF7FEFF 		bl	_ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
+ 272              	.LVL15:
+  33:DaisyDrone.cpp **** 	{
+ 273              		.loc 6 33 2 is_stmt 1 view .LVU61
+  33:DaisyDrone.cpp **** 	{
+ 274              		.loc 6 33 20 view .LVU62
+ 275              	.LBE107:
+ 276              		.loc 6 37 2 view .LVU63
+ 277              		.loc 6 37 13 is_stmt 0 view .LVU64
+ 278 0030 0423     		movs	r3, #4
+ 279 0032 0222     		movs	r2, #2
+ 280 0034 2046     		mov	r0, r4
+ 281 0036 0DEB0301 		add	r1, sp, r3
+ 282 003a FFF7FEFF 		bl	_ZN5daisy9AdcHandle4InitEPNS_16AdcChannelConfigEjNS0_12OverSamplingE
+ 283              	.LVL16:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 12
 
 
- 300              		.loc 6 44 20 view .LVU58
- 301 0004 494C     		ldr	r4, .L24+4
- 302              	.LBE128:
- 303              	.LBE127:
-  37:DaisyDrone.cpp **** 	hw.Configure();
- 304              		.loc 7 37 1 view .LVU59
- 305 0006 2DED028B 		vpush.64	{d8}
- 306              		.cfi_def_cfa_offset 16
- 307              		.cfi_offset 80, -16
- 308              		.cfi_offset 81, -12
- 309 000a 88B0     		sub	sp, sp, #32
- 310              		.cfi_def_cfa_offset 48
- 311              	.LBB133:
- 312              	.LBB129:
-  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
-  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
-  47:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 313              		.loc 6 47 20 view .LVU60
- 314 000c B6EE008A 		vmov.f32	s16, #5.0e-1
- 315              	.LBE129:
- 316              	.LBE133:
- 317              		.loc 7 38 14 view .LVU61
- 318 0010 FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
- 319              	.LVL16:
-  39:DaisyDrone.cpp **** 	hw.Init();
- 320              		.loc 7 39 2 is_stmt 1 view .LVU62
- 321              		.loc 7 39 9 is_stmt 0 view .LVU63
- 322 0014 0021     		movs	r1, #0
- 323 0016 4448     		ldr	r0, .L24
- 324 0018 FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
- 325              	.LVL17:
+  38:DaisyDrone.cpp ****     hw.adc.Start();
+ 284              		.loc 6 38 5 is_stmt 1 view .LVU65
+ 285              		.loc 6 38 17 is_stmt 0 view .LVU66
+ 286 003e 2046     		mov	r0, r4
+ 287 0040 FFF7FEFF 		bl	_ZN5daisy9AdcHandle5StartEv
+ 288              	.LVL17:
+  39:DaisyDrone.cpp **** }
+ 289              		.loc 6 39 1 view .LVU67
+ 290 0044 0AB0     		add	sp, sp, #40
+ 291              		.cfi_def_cfa_offset 8
+ 292              		@ sp needed
+ 293 0046 10BD     		pop	{r4, pc}
+ 294              	.L20:
+ 295              		.align	2
+ 296              	.L19:
+ 297 0048 18000000 		.word	.LANCHOR1+24
+ 298              		.cfi_endproc
+ 299              	.LFE4269:
+ 301              		.section	.rodata._Z9set_tonesf.str1.4,"aMS",%progbits,1
+ 302              		.align	2
+ 303              	.LC1:
+ 304 0000 42617365 		.ascii	"Base Frequency %d\000"
+ 304      20467265 
+ 304      7175656E 
+ 304      63792025 
+ 304      6400
+ 305 0012 0000     		.align	2
+ 306              	.LC2:
+ 307 0014 25642025 		.ascii	"%d %d %d\000"
+ 307      64202564 
+ 307      00
+ 308              		.section	.text._Z9set_tonesf,"ax",%progbits
+ 309              		.align	1
+ 310              		.p2align 2,,3
+ 311              		.global	_Z9set_tonesf
+ 312              		.syntax unified
+ 313              		.thumb
+ 314              		.thumb_func
+ 316              	_Z9set_tonesf:
+ 317              	.LVL18:
+ 318              	.LFB4270:
   40:DaisyDrone.cpp **** 
-  41:DaisyDrone.cpp **** 	hw.StartLog(false/*block until serial connection opened*/);
- 326              		.loc 7 41 2 is_stmt 1 view .LVU64
- 327              	.LBB134:
- 328              	.LBI134:
+  41:DaisyDrone.cpp **** void set_tones(float base_frequency)
+  42:DaisyDrone.cpp **** {
+ 319              		.loc 6 42 1 is_stmt 1 view -0
+ 320              		.cfi_startproc
+ 321              		@ args = 0, pretend = 0, frame = 16
+ 322              		@ frame_needed = 0, uses_anonymous_args = 0
+  43:DaisyDrone.cpp **** 	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
+ 323              		.loc 6 43 2 view .LVU69
+ 324              		.loc 6 43 55 is_stmt 0 view .LVU70
+ 325 0000 DFED257A 		vldr.32	s15, .L25
+ 326              	.LBB108:
+ 327              	.LBB109:
   23:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h **** 
   24:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     /** 
   25:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     Configures the settings for all internal peripherals,
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 13
+
+
   26:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     but does not initialize them.
   27:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     This allows for modification of the configuration
   28:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     handles prior to initialization.
@@ -778,9 +739,6 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   41:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h **** 
   42:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     ADCs, DACs, and other special peripherals (such as I2C, SPI, etc.)
   43:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     can be initialized using their specific initializers within libdaisy
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 14
-
-
   44:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     for a specific application.
   45:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     */
   46:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     void Init(bool boost = false);
@@ -820,6 +778,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   80:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     void ChangeAudioCallback(AudioHandle::InterleavingAudioCallback cb);
   81:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h **** 
   82:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     /** Changes to a new multichannel callback
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 14
+
+
   83:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****      */
   84:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     void ChangeAudioCallback(AudioHandle::AudioCallback cb);
   85:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h **** 
@@ -838,9 +799,6 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   98:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     /** Sets the number of samples processed per channel by the audio callback.
   99:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****      */
  100:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     void SetAudioBlockSize(size_t blocksize);
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 15
-
-
  101:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h **** 
  102:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     /** Returns the number of samples per channel in a block of audio. */
  103:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     size_t AudioBlockSize();
@@ -870,37 +828,407 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
  127:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     static void PrintLine(const char* format, VA... va)
  128:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
  129:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****         Log::PrintLine(format, va...);
+ 328              		.loc 1 129 23 view .LVU71
+ 329 0004 2548     		ldr	r0, .L25+4
+ 330              	.LBE109:
+ 331              	.LBE108:
+ 332              		.loc 6 43 55 view .LVU72
+ 333 0006 60EE277A 		vmul.f32	s15, s0, s15
+  42:DaisyDrone.cpp **** 	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
+ 334              		.loc 6 42 1 view .LVU73
+ 335 000a F0B5     		push	{r4, r5, r6, r7, lr}
+ 336              		.cfi_def_cfa_offset 20
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 15
+
+
+ 337              		.cfi_offset 4, -20
+ 338              		.cfi_offset 5, -16
+ 339              		.cfi_offset 6, -12
+ 340              		.cfi_offset 7, -8
+ 341              		.cfi_offset 14, -4
+ 342              	.LBB113:
+ 343              	.LBB110:
+ 344              		.loc 1 129 23 view .LVU74
+ 345 000c FDEEE77A 		vcvt.s32.f32	s15, s15
+ 346 0010 234D     		ldr	r5, .L25+8
+ 347              	.LBE110:
+ 348              	.LBE113:
+  42:DaisyDrone.cpp **** 	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
+ 349              		.loc 6 42 1 view .LVU75
+ 350 0012 2DED048B 		vpush.64	{d8, d9}
+ 351              		.cfi_def_cfa_offset 36
+ 352              		.cfi_offset 80, -36
+ 353              		.cfi_offset 81, -32
+ 354              		.cfi_offset 82, -28
+ 355              		.cfi_offset 83, -24
+ 356              	.LBB114:
+ 357              	.LBB111:
+ 358              		.loc 1 129 23 view .LVU76
+ 359 0016 17EE901A 		vmov	r1, s15	@ int
+ 360              	.LBE111:
+ 361              	.LBE114:
+  42:DaisyDrone.cpp **** 	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
+ 362              		.loc 6 42 1 view .LVU77
+ 363 001a 85B0     		sub	sp, sp, #20
+ 364              		.cfi_def_cfa_offset 56
+  42:DaisyDrone.cpp **** 	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
+ 365              		.loc 6 42 1 view .LVU78
+ 366 001c B0EE409A 		vmov.f32	s18, s0
+ 367              	.LVL19:
+ 368              	.LBB115:
+ 369              	.LBI108:
+ 127:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
+ 370              		.loc 1 127 17 is_stmt 1 view .LVU79
+ 371              	.LBB112:
+ 372              		.loc 1 129 23 is_stmt 0 view .LVU80
+ 373 0020 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+ 374              	.LVL20:
+ 375              		.loc 1 129 23 view .LVU81
+ 376              	.LBE112:
+ 377              	.LBE115:
+  44:DaisyDrone.cpp **** 
+  45:DaisyDrone.cpp **** 	const int semitones[] = { 0, 3, 7, 12 };
+ 378              		.loc 6 45 2 is_stmt 1 view .LVU82
+ 379              		.loc 6 45 12 is_stmt 0 view .LVU83
+ 380 0024 1F4B     		ldr	r3, .L25+12
+ 381 0026 6C46     		mov	r4, sp
+ 382 0028 02AF     		add	r7, sp, #8
+ 383 002a 0FCB     		ldm	r3, {r0, r1, r2, r3}
+ 384 002c 84E80F00 		stm	r4, {r0, r1, r2, r3}
+  46:DaisyDrone.cpp **** 	
+  47:DaisyDrone.cpp **** 	for( int t = 0; t < NUM_TONES; ++t )
+ 385              		.loc 6 47 2 is_stmt 1 view .LVU84
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 16
+
+
+ 386              	.LVL21:
+ 387              	.LBB116:
+ 388              		.loc 6 47 20 view .LVU85
+ 389              	.L22:
+ 390              	.LBB117:
+  48:DaisyDrone.cpp **** 	{
+  49:DaisyDrone.cpp **** 		const int semitone = semitones[t];
+ 391              		.loc 6 49 3 discriminator 2 view .LVU86
+ 392              		.loc 6 49 13 is_stmt 0 discriminator 2 view .LVU87
+ 393 0030 54F8046B 		ldr	r6, [r4], #4
+ 394              	.LVL22:
+  50:DaisyDrone.cpp **** 
+  51:DaisyDrone.cpp **** 		const float freq_mult	= powf( 2.0f, semitone / 12.0f );
+ 395              		.loc 6 51 3 is_stmt 1 discriminator 2 view .LVU88
+ 396              		.loc 6 51 31 is_stmt 0 discriminator 2 view .LVU89
+ 397 0034 F2EE087A 		vmov.f32	s15, #1.2e+1
+ 398 0038 B0EE000A 		vmov.f32	s0, #2.0e+0
+ 399 003c 07EE106A 		vmov	s14, r6	@ int
+ 400 0040 F8EEC70A 		vcvt.f32.s32	s1, s14
+ 401 0044 C0EEA70A 		vdiv.f32	s1, s1, s15
+ 402 0048 FFF7FEFF 		bl	powf
+ 403              	.LVL23:
+ 404              	.LBB118:
+ 405              	.LBB119:
+ 406              		.file 7 "../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h"
+   1:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #pragma once
+   2:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #ifndef DSY_OSCILLATOR_H
+   3:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #define DSY_OSCILLATOR_H
+   4:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #include <stdint.h>
+   5:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #include "Utility/dsp.h"
+   6:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** #ifdef __cplusplus
+   7:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
+   8:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** namespace daisysp
+   9:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** {
+  10:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** /** Synthesis of several waveforms, including polyBLEP bandlimited waveforms.
+  11:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** */
+  12:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** class Oscillator
+  13:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** {
+  14:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****   public:
+  15:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     Oscillator() {}
+  16:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
+  17:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Choices for output waveforms, POLYBLEP are appropriately labeled. Others are naive forms.
+  18:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
+  19:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     enum
+  20:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
+  21:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_SIN,
+  22:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_TRI,
+  23:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_SAW,
+  24:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_RAMP,
+  25:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_SQUARE,
+  26:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_TRI,
+  27:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_SAW,
+  28:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_POLYBLEP_SQUARE,
+  29:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         WAVE_LAST,
+  30:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     };
+  31:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
+  32:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 17
+
+
+  33:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Initializes the Oscillator
+  34:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
+  35:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         \param sample_rate - sample rate of the audio engine being run, and the frequency that the 
+  36:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
+  37:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         Defaults:
+  38:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         - freq_ = 100 Hz
+  39:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         - amp_ = 0.5
+  40:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         - waveform_ = sine wave.
+  41:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
+  42:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     void Init(float sample_rate)
+  43:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
+  44:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         sr_        = sample_rate;
+  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
+  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
+  47:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
+  48:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
+  49:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
+  50:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
+  51:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eoc_       = true;
+  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eor_       = true;
+  53:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
+  54:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
+  55:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
+  56:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Changes the frequency of the Oscillator, and recalculates phase increment.
+  57:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
+  58:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     inline void SetFreq(const float f)
+  59:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
+  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = f;
+  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
+ 407              		.loc 7 61 34 discriminator 2 view .LVU90
+ 408 004c 2846     		mov	r0, r5
+ 409              	.LBE119:
+ 410              	.LBE118:
+ 411              	.LBE117:
+  47:DaisyDrone.cpp **** 	{
+ 412              		.loc 6 47 20 discriminator 2 view .LVU91
+ 413 004e 2835     		adds	r5, r5, #40
+ 414              	.LBB129:
+  52:DaisyDrone.cpp **** 		const float freq		= base_frequency * freq_mult;
+ 415              		.loc 6 52 15 discriminator 2 view .LVU92
+ 416 0050 69EE008A 		vmul.f32	s17, s18, s0
+  51:DaisyDrone.cpp **** 		const float freq		= base_frequency * freq_mult;
+ 417              		.loc 6 51 31 discriminator 2 view .LVU93
+ 418 0054 B0EE408A 		vmov.f32	s16, s0
+ 419              	.LVL24:
+ 420              		.loc 6 52 3 is_stmt 1 discriminator 2 view .LVU94
+  53:DaisyDrone.cpp **** 		oscillators[t].SetFreq(freq);
+ 421              		.loc 6 53 3 discriminator 2 view .LVU95
+ 422              	.LBB122:
+ 423              	.LBI118:
+  58:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
+ 424              		.loc 7 58 17 discriminator 2 view .LVU96
+ 425              	.LBB120:
+  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
+ 426              		.loc 7 60 9 discriminator 2 view .LVU97
+ 427              		.loc 7 61 34 is_stmt 0 discriminator 2 view .LVU98
+ 428 0058 B0EE680A 		vmov.f32	s0, s17
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 18
+
+
+ 429              	.LVL25:
+  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
+ 430              		.loc 7 60 20 discriminator 2 view .LVU99
+ 431 005c 45ED088A 		vstr.32	s17, [r5, #-32]
+ 432              		.loc 7 61 9 is_stmt 1 discriminator 2 view .LVU100
+ 433              		.loc 7 61 34 is_stmt 0 discriminator 2 view .LVU101
+ 434 0060 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 435              	.LVL26:
+ 436              	.LBE120:
+ 437              	.LBE122:
+  54:DaisyDrone.cpp **** 
+  55:DaisyDrone.cpp **** 		hw.PrintLine("%d %d %d", semitone, int(freq_mult * 100), int(freq * 100));
+ 438              		.loc 6 55 69 discriminator 2 view .LVU102
+ 439 0064 DFED0C7A 		vldr.32	s15, .L25
+ 440              	.LBB123:
+ 441              	.LBB124:
+ 442              		.loc 1 129 23 discriminator 2 view .LVU103
+ 443 0068 3146     		mov	r1, r6
+ 444 006a 0F48     		ldr	r0, .L25+16
+ 445              	.LBE124:
+ 446              	.LBE123:
+ 447              		.loc 6 55 69 discriminator 2 view .LVU104
+ 448 006c 68EEA78A 		vmul.f32	s17, s17, s15
+ 449              	.LVL27:
+ 450              	.LBB126:
+ 451              	.LBB121:
+ 452              		.loc 7 61 20 discriminator 2 view .LVU105
+ 453 0070 05ED040A 		vstr.32	s0, [r5, #-16]
+ 454              	.LVL28:
+ 455              		.loc 7 61 20 discriminator 2 view .LVU106
+ 456              	.LBE121:
+ 457              	.LBE126:
+ 458              		.loc 6 55 3 is_stmt 1 discriminator 2 view .LVU107
+ 459              	.LBB127:
+ 460              	.LBI123:
+ 127:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
+ 461              		.loc 1 127 17 discriminator 2 view .LVU108
+ 462              	.LBE127:
+ 463              		.loc 6 55 52 is_stmt 0 discriminator 2 view .LVU109
+ 464 0074 28EE278A 		vmul.f32	s16, s16, s15
+ 465              	.LVL29:
+ 466              	.LBB128:
+ 467              	.LBB125:
+ 468              		.loc 1 129 23 discriminator 2 view .LVU110
+ 469 0078 FDEEE87A 		vcvt.s32.f32	s15, s17
+ 470 007c 17EE903A 		vmov	r3, s15	@ int
+ 471 0080 FDEEC87A 		vcvt.s32.f32	s15, s16
+ 472 0084 17EE902A 		vmov	r2, s15	@ int
+ 473 0088 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+ 474              	.LVL30:
+ 475              		.loc 1 129 23 discriminator 2 view .LVU111
+ 476              	.LBE125:
+ 477              	.LBE128:
+ 478              	.LBE129:
+  47:DaisyDrone.cpp **** 	{
+ 479              		.loc 6 47 2 is_stmt 1 discriminator 2 view .LVU112
+  47:DaisyDrone.cpp **** 	{
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 19
+
+
+ 480              		.loc 6 47 20 discriminator 2 view .LVU113
+ 481 008c BC42     		cmp	r4, r7
+ 482 008e CFD1     		bne	.L22
+ 483              	.LBE116:
+  56:DaisyDrone.cpp **** 	}
+  57:DaisyDrone.cpp **** }
+ 484              		.loc 6 57 1 is_stmt 0 view .LVU114
+ 485 0090 05B0     		add	sp, sp, #20
+ 486              		.cfi_def_cfa_offset 36
+ 487              		@ sp needed
+ 488 0092 BDEC048B 		vldm	sp!, {d8-d9}
+ 489              		.cfi_restore 82
+ 490              		.cfi_restore 83
+ 491              		.cfi_restore 80
+ 492              		.cfi_restore 81
+ 493              		.cfi_def_cfa_offset 20
+ 494              	.LVL31:
+ 495              		.loc 6 57 1 view .LVU115
+ 496 0096 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 497              	.LVL32:
+ 498              	.L26:
+ 499              		.loc 6 57 1 view .LVU116
+ 500              		.align	2
+ 501              	.L25:
+ 502 0098 0000C842 		.word	1120403456
+ 503 009c 00000000 		.word	.LC1
+ 504 00a0 00000000 		.word	.LANCHOR0
+ 505 00a4 00000000 		.word	.LANCHOR2
+ 506 00a8 14000000 		.word	.LC2
+ 507              		.cfi_endproc
+ 508              	.LFE4270:
+ 510              		.section	.rodata.main.str1.4,"aMS",%progbits,1
+ 511              		.align	2
+ 512              	.LC3:
+ 513 0000 53746172 		.ascii	"Startup complete\000"
+ 513      74757020 
+ 513      636F6D70 
+ 513      6C657465 
+ 513      00
+ 514              		.section	.text.startup.main,"ax",%progbits
+ 515              		.align	1
+ 516              		.p2align 2,,3
+ 517              		.global	main
+ 518              		.syntax unified
+ 519              		.thumb
+ 520              		.thumb_func
+ 522              	main:
+ 523              	.LFB4271:
+  58:DaisyDrone.cpp **** 
+  59:DaisyDrone.cpp **** int main(void)
+  60:DaisyDrone.cpp **** {
+ 524              		.loc 6 60 1 is_stmt 1 view -0
+ 525              		.cfi_startproc
+ 526              		@ args = 0, pretend = 0, frame = 32
+ 527              		@ frame_needed = 0, uses_anonymous_args = 0
+  61:DaisyDrone.cpp **** 	hw.Configure();
+ 528              		.loc 6 61 2 view .LVU118
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 20
+
+
+  60:DaisyDrone.cpp **** 	hw.Configure();
+ 529              		.loc 6 60 1 is_stmt 0 view .LVU119
+ 530 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 531              		.cfi_def_cfa_offset 20
+ 532              		.cfi_offset 4, -20
+ 533              		.cfi_offset 5, -16
+ 534              		.cfi_offset 6, -12
+ 535              		.cfi_offset 7, -8
+ 536              		.cfi_offset 14, -4
+ 537              		.loc 6 61 14 view .LVU120
+ 538 0002 3648     		ldr	r0, .L32
+ 539              	.LBB148:
+  62:DaisyDrone.cpp **** 	hw.Init();
+  63:DaisyDrone.cpp **** 
+  64:DaisyDrone.cpp **** 	hw.StartLog(true/*block until serial connection opened*/);
+  65:DaisyDrone.cpp **** 
+  66:DaisyDrone.cpp ****     Led led1;
+  67:DaisyDrone.cpp ****     //Initialize led1. We'll plug it into pin 28.
+  68:DaisyDrone.cpp ****     //false here indicates the value is uninverted
+  69:DaisyDrone.cpp ****     led1.Init(hw.GetPin(28), false);	
+  70:DaisyDrone.cpp **** 
+  71:DaisyDrone.cpp **** 	init_adc();
+  72:DaisyDrone.cpp **** 
+  73:DaisyDrone.cpp ****     //Set up oscillators
+  74:DaisyDrone.cpp **** 	const float sample_rate = hw.AudioSampleRate();
+  75:DaisyDrone.cpp **** 	for( Oscillator& osc : oscillators )
+ 540              		.loc 6 75 25 view .LVU121
+ 541 0004 364C     		ldr	r4, .L32+4
+ 542              	.LBE148:
+  60:DaisyDrone.cpp **** 	hw.Configure();
+ 543              		.loc 6 60 1 view .LVU122
+ 544 0006 2DED028B 		vpush.64	{d8}
+ 545              		.cfi_def_cfa_offset 28
+ 546              		.cfi_offset 80, -28
+ 547              		.cfi_offset 81, -24
+ 548 000a 89B0     		sub	sp, sp, #36
+ 549              		.cfi_def_cfa_offset 64
+ 550              	.LBB163:
+ 551              		.loc 6 75 25 view .LVU123
+ 552 000c 2546     		mov	r5, r4
+ 553              	.LBE163:
+  61:DaisyDrone.cpp **** 	hw.Init();
+ 554              		.loc 6 61 14 view .LVU124
+ 555 000e FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
+ 556              	.LVL33:
+  62:DaisyDrone.cpp **** 	hw.Init();
+ 557              		.loc 6 62 2 is_stmt 1 view .LVU125
+  62:DaisyDrone.cpp **** 	hw.Init();
+ 558              		.loc 6 62 9 is_stmt 0 view .LVU126
+ 559 0012 0021     		movs	r1, #0
+ 560 0014 3148     		ldr	r0, .L32
+ 561 0016 04F15007 		add	r7, r4, #80
+ 562 001a FFF7FEFF 		bl	_ZN5daisy9DaisySeed4InitEb
+ 563              	.LVL34:
+  64:DaisyDrone.cpp **** 
+ 564              		.loc 6 64 2 is_stmt 1 view .LVU127
+ 565              	.LBB164:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 21
+
+
+ 566              	.LBI164:
  130:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
  131:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h **** 
  132:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     /** Start the logging session. Optionally wait for terminal connection before proceeding.
  133:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     */
  134:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     static void StartLog(bool wait_for_pc = false)
- 329              		.loc 1 134 17 view .LVU65
- 330              	.LBB135:
+ 567              		.loc 1 134 17 view .LVU128
+ 568              	.LBB165:
  135:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
  136:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****         Log::StartLog(wait_for_pc);
- 331              		.loc 1 136 9 view .LVU66
- 332              		.loc 1 136 22 is_stmt 0 view .LVU67
- 333 001c 0020     		movs	r0, #0
- 334 001e FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
- 335              	.LVL18:
- 336              		.loc 1 136 22 view .LVU68
- 337              	.LBE135:
- 338              	.LBE134:
-  42:DaisyDrone.cpp **** 
-  43:DaisyDrone.cpp ****     Led led1;
- 339              		.loc 7 43 5 is_stmt 1 view .LVU69
- 340              	.LBB136:
- 341              	.LBI136:
- 342              		.file 8 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h"
+ 569              		.loc 1 136 9 view .LVU129
+ 570              		.loc 1 136 22 is_stmt 0 view .LVU130
+ 571 001e 0120     		movs	r0, #1
+ 572 0020 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
+ 573              	.LVL35:
+ 574              		.loc 1 136 22 view .LVU131
+ 575              	.LBE165:
+ 576              	.LBE164:
+  66:DaisyDrone.cpp ****     //Initialize led1. We'll plug it into pin 28.
+ 577              		.loc 6 66 5 is_stmt 1 view .LVU132
+ 578              	.LBB166:
+ 579              	.LBI166:
+ 580              		.file 8 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h"
    1:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** 
    2:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** #pragma once
    3:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** #ifndef DSY_LED_H
    4:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** #define DSY_LED_H
    5:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** #include "daisy_core.h"
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 16
-
-
    6:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** #include "per/gpio.h"
    7:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** 
    8:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** /* TODO - Get this set up to work with the dev_leddriver stuff as well
@@ -920,527 +1248,423 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   22:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h **** {
   23:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h ****   public:
   24:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/led.h ****     Led() {}
- 343              		.loc 8 24 5 view .LVU70
- 344              		.loc 8 24 5 is_stmt 0 view .LVU71
- 345              	.LBE136:
-  44:DaisyDrone.cpp ****     //Initialize led1. We'll plug it into pin 28.
-  45:DaisyDrone.cpp ****     //false here indicates the value is uninverted
-  46:DaisyDrone.cpp ****     led1.Init(hw.GetPin(28), false);	
- 346              		.loc 7 46 5 is_stmt 1 view .LVU72
- 347              		.loc 7 46 14 is_stmt 0 view .LVU73
- 348 0022 1C20     		movs	r0, #28
- 349 0024 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
- 350              	.LVL19:
- 351 0028 ADF80000 		strh	r0, [sp]	@ movhi
- 352 002c 0099     		ldr	r1, [sp]
- 353 002e 0022     		movs	r2, #0
- 354 0030 9FED3F0A 		vldr.32	s0, .L24+8
- 355 0034 01A8     		add	r0, sp, #4
- 356 0036 FFF7FEFF 		bl	_ZN5daisy3Led4InitE12dsy_gpio_pinbf
- 357              	.LVL20:
-  47:DaisyDrone.cpp **** 
-  48:DaisyDrone.cpp **** 	init_pots();
- 358              		.loc 7 48 2 is_stmt 1 view .LVU74
- 359              		.loc 7 48 11 is_stmt 0 view .LVU75
- 360 003a FFF7FEFF 		bl	_Z9init_potsv
- 361              	.LVL21:
-  49:DaisyDrone.cpp **** 
-  50:DaisyDrone.cpp ****     //Set up oscillator
-  51:DaisyDrone.cpp ****     osc.Init( hw.AudioSampleRate() );
- 362              		.loc 7 51 5 is_stmt 1 view .LVU76
- 363              		.loc 7 51 13 is_stmt 0 view .LVU77
- 364 003e 3A48     		ldr	r0, .L24
- 365 0040 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
- 366              	.LVL22:
- 367              	.LBB137:
- 368              	.LBB130:
+ 581              		.loc 8 24 5 view .LVU133
+ 582              		.loc 8 24 5 is_stmt 0 view .LVU134
+ 583              	.LBE166:
+  69:DaisyDrone.cpp **** 
+ 584              		.loc 6 69 5 is_stmt 1 view .LVU135
+  69:DaisyDrone.cpp **** 
+ 585              		.loc 6 69 14 is_stmt 0 view .LVU136
+ 586 0024 1C20     		movs	r0, #28
+ 587 0026 FFF7FEFF 		bl	_ZN5daisy9DaisySeed6GetPinEh
+ 588              	.LVL36:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 22
+
+
+ 589 002a ADF80000 		strh	r0, [sp]	@ movhi
+ 590 002e 9FED2D0A 		vldr.32	s0, .L32+8
+ 591 0032 0022     		movs	r2, #0
+ 592 0034 0099     		ldr	r1, [sp]
+ 593 0036 01A8     		add	r0, sp, #4
+ 594 0038 FFF7FEFF 		bl	_ZN5daisy3Led4InitE12dsy_gpio_pinbf
+ 595              	.LVL37:
+  71:DaisyDrone.cpp **** 
+ 596              		.loc 6 71 2 is_stmt 1 view .LVU137
+  71:DaisyDrone.cpp **** 
+ 597              		.loc 6 71 10 is_stmt 0 view .LVU138
+ 598 003c FFF7FEFF 		bl	_Z8init_adcv
+ 599              	.LVL38:
+  74:DaisyDrone.cpp **** 	for( Oscillator& osc : oscillators )
+ 600              		.loc 6 74 2 is_stmt 1 view .LVU139
+  74:DaisyDrone.cpp **** 	for( Oscillator& osc : oscillators )
+ 601              		.loc 6 74 46 is_stmt 0 view .LVU140
+ 602 0040 2648     		ldr	r0, .L32
+ 603 0042 FFF7FEFF 		bl	_ZN5daisy9DaisySeed15AudioSampleRateEv
+ 604              	.LVL39:
+ 605              	.LBB167:
+ 606              	.LBB149:
+ 607              	.LBB150:
   45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 369              		.loc 6 45 27 view .LVU78
- 370 0044 B7EE006A 		vmov.f32	s12, #1.0e+0
- 371              	.LBE130:
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 17
-
-
- 372              	.LBE137:
- 373              		.loc 7 51 13 view .LVU79
- 374 0048 F0EE407A 		vmov.f32	s15, s0
- 375              	.LVL23:
- 376              	.LBB138:
- 377              	.LBI127:
+ 608              		.loc 7 45 27 view .LVU141
+ 609 0046 F7EE007A 		vmov.f32	s15, #1.0e+0
+ 610              	.LBE150:
+ 611              	.LBE149:
+ 612              	.LBE167:
+  74:DaisyDrone.cpp **** 	for( Oscillator& osc : oscillators )
+ 613              		.loc 6 74 46 view .LVU142
+ 614 004a B0EE408A 		vmov.f32	s16, s0
+ 615              	.LVL40:
+ 616              		.loc 6 75 2 is_stmt 1 view .LVU143
+ 617              	.LBB168:
+ 618              		.loc 6 75 25 view .LVU144
+ 619              	.LBB155:
+ 620              	.LBB151:
+  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
+ 621              		.loc 7 45 27 is_stmt 0 view .LVU145
+ 622 004e C7EE808A 		vdiv.f32	s17, s15, s0
+ 623              	.LVL41:
+ 624              	.L28:
+  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
+ 625              		.loc 7 45 27 view .LVU146
+ 626              	.LBE151:
+ 627              	.LBE155:
+  76:DaisyDrone.cpp **** 	{
+  77:DaisyDrone.cpp **** 		osc.Init(sample_rate);
+ 628              		.loc 6 77 3 is_stmt 1 view .LVU147
+ 629              	.LBB156:
+ 630              	.LBI149:
   42:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
- 378              		.loc 6 42 10 is_stmt 1 view .LVU80
- 379              	.LBB131:
+ 631              		.loc 7 42 10 view .LVU148
+ 632              	.LBB152:
   44:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 380              		.loc 6 44 9 view .LVU81
-  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 381              		.loc 6 46 20 is_stmt 0 view .LVU82
- 382 004c 9FED397A 		vldr.32	s14, .L24+12
-  48:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 383              		.loc 6 48 20 view .LVU83
- 384 0050 0023     		movs	r3, #0
-  49:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 385              		.loc 6 49 34 view .LVU84
- 386 0052 2046     		mov	r0, r4
- 387 0054 B0EE470A 		vmov.f32	s0, s14
- 388              	.LVL24:
-  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 389              		.loc 6 46 20 view .LVU85
- 390 0058 84ED027A 		vstr.32	s14, [r4, #8]
-  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 391              		.loc 6 45 27 view .LVU86
- 392 005c C6EE276A 		vdiv.f32	s13, s12, s15
-  44:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
- 393              		.loc 6 44 20 view .LVU87
- 394 0060 C4ED037A 		vstr.32	s15, [r4, #12]
-  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 395              		.loc 6 45 9 is_stmt 1 view .LVU88
-  48:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 396              		.loc 6 48 20 is_stmt 0 view .LVU89
- 397 0064 6361     		str	r3, [r4, #20]	@ float
-  47:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 398              		.loc 6 47 20 view .LVU90
- 399 0066 84ED018A 		vstr.32	s16, [r4, #4]
-  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
- 400              		.loc 6 45 20 view .LVU91
- 401 006a C4ED046A 		vstr.32	s13, [r4, #16]
-  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
- 402              		.loc 6 46 9 is_stmt 1 view .LVU92
-  47:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
- 403              		.loc 6 47 9 view .LVU93
-  48:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
- 404              		.loc 6 48 9 view .LVU94
- 405              		.loc 6 49 9 view .LVU95
- 406              		.loc 6 49 34 is_stmt 0 view .LVU96
- 407 006e FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 408              	.LVL25:
- 409              		.loc 6 49 34 view .LVU97
- 410 0072 F0EE407A 		vmov.f32	s15, s0
-  50:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 411              		.loc 6 50 20 view .LVU98
- 412 0076 0022     		movs	r2, #0
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 18
+ 633              		.loc 7 44 9 view .LVU149
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 23
 
 
-  51:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eoc_       = true;
-  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eor_       = true;
- 413              		.loc 6 52 20 view .LVU99
- 414 0078 40F20113 		movw	r3, #257
- 415              	.LBE131:
- 416              	.LBE138:
- 417              	.LBB139:
- 418              	.LBB140:
-  53:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
-  54:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
-  55:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
-  56:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Changes the frequency of the Oscillator, and recalculates phase increment.
-  57:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
-  58:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     inline void SetFreq(const float f)
-  59:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
-  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = f;
- 419              		.loc 6 60 20 view .LVU100
- 420 007c 9FED2E0A 		vldr.32	s0, .L24+16
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 421              		.loc 6 61 34 view .LVU101
- 422 0080 2046     		mov	r0, r4
- 423              	.LBE140:
- 424              	.LBE139:
- 425              	.LBB144:
- 426              	.LBB132:
-  50:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eoc_       = true;
- 427              		.loc 6 50 20 view .LVU102
- 428 0082 2270     		strb	r2, [r4]
+  47:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
+ 634              		.loc 7 47 20 is_stmt 0 view .LVU150
+ 635 0052 4FF07C53 		mov	r3, #1056964608
+  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
+ 636              		.loc 7 46 20 view .LVU151
+ 637 0056 9FED240A 		vldr.32	s0, .L32+12
+  48:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
+ 638              		.loc 7 48 20 view .LVU152
+ 639 005a 0026     		movs	r6, #0
+  44:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         sr_recip_  = 1.0f / sample_rate;
+ 640              		.loc 7 44 20 view .LVU153
+ 641 005c 85ED038A 		vstr.32	s16, [r5, #12]
+  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
+ 642              		.loc 7 45 9 is_stmt 1 view .LVU154
+  47:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
+ 643              		.loc 7 47 20 is_stmt 0 view .LVU155
+ 644 0060 6B60     		str	r3, [r5, #4]	@ float
   49:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
- 429              		.loc 6 49 20 view .LVU103
- 430 0084 C4ED067A 		vstr.32	s15, [r4, #24]
-  50:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eoc_       = true;
- 431              		.loc 6 50 9 is_stmt 1 view .LVU104
+ 645              		.loc 7 49 34 view .LVU156
+ 646 0062 2846     		mov	r0, r5
+  45:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         freq_      = 100.0f;
+ 647              		.loc 7 45 20 view .LVU157
+ 648 0064 C5ED048A 		vstr.32	s17, [r5, #16]
+  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
+ 649              		.loc 7 46 9 is_stmt 1 view .LVU158
+ 650              	.LBE152:
+ 651              	.LBE156:
+  75:DaisyDrone.cpp **** 	{
+ 652              		.loc 6 75 2 is_stmt 0 view .LVU159
+ 653 0068 2835     		adds	r5, r5, #40
+ 654              	.LVL42:
+ 655              	.LBB157:
+ 656              	.LBB153:
+  46:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         amp_       = 0.5f;
+ 657              		.loc 7 46 20 view .LVU160
+ 658 006a 05ED080A 		vstr.32	s0, [r5, #-32]
+  47:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_     = 0.0f;
+ 659              		.loc 7 47 9 is_stmt 1 view .LVU161
+  48:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
+ 660              		.loc 7 48 9 view .LVU162
+  48:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(freq_);
+ 661              		.loc 7 48 20 is_stmt 0 view .LVU163
+ 662 006e 45F8146C 		str	r6, [r5, #-20]	@ float
+  49:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
+ 663              		.loc 7 49 9 is_stmt 1 view .LVU164
+  49:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
+ 664              		.loc 7 49 34 is_stmt 0 view .LVU165
+ 665 0072 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 666              	.LVL43:
   51:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eor_       = true;
- 432              		.loc 6 51 9 view .LVU105
-  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 433              		.loc 6 52 9 view .LVU106
-  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 434              		.loc 6 52 20 is_stmt 0 view .LVU107
- 435 0088 A384     		strh	r3, [r4, #36]	@ movhi
- 436              	.LVL26:
-  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 437              		.loc 6 52 20 view .LVU108
- 438              	.LBE132:
- 439              	.LBE144:
-  52:DaisyDrone.cpp ****     osc.SetWaveform(osc.WAVE_SIN);
- 440              		.loc 7 52 5 is_stmt 1 view .LVU109
+ 667              		.loc 7 51 20 view .LVU166
+ 668 0076 0123     		movs	r3, #1
+  50:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eoc_       = true;
+ 669              		.loc 7 50 20 view .LVU167
+ 670 0078 0022     		movs	r2, #0
+  49:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         waveform_  = WAVE_SIN;
+ 671              		.loc 7 49 20 view .LVU168
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 24
+
+
+ 672 007a 05ED040A 		vstr.32	s0, [r5, #-16]
+  50:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eoc_       = true;
+ 673              		.loc 7 50 9 is_stmt 1 view .LVU169
+ 674              	.LBE153:
+ 675              	.LBE157:
+ 676              	.LBB158:
+ 677              	.LBB159:
   62:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
   63:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
   64:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h **** 
   65:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the amplitude of the waveform.
   66:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
   67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     inline void SetAmp(const float a) { amp_ = a; }
+ 678              		.loc 7 67 46 is_stmt 0 view .LVU170
+ 679 007e 45F8246C 		str	r6, [r5, #-36]	@ float
+ 680              	.LBE159:
+ 681              	.LBE158:
+ 682              	.LBB161:
+ 683              	.LBB154:
+  50:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eoc_       = true;
+ 684              		.loc 7 50 20 view .LVU171
+ 685 0082 05F8282C 		strb	r2, [r5, #-40]
+  51:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eor_       = true;
+ 686              		.loc 7 51 9 is_stmt 1 view .LVU172
+  51:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         eor_       = true;
+ 687              		.loc 7 51 20 is_stmt 0 view .LVU173
+ 688 0086 05F8033C 		strb	r3, [r5, #-3]
+  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
+ 689              		.loc 7 52 9 is_stmt 1 view .LVU174
+  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
+ 690              		.loc 7 52 20 is_stmt 0 view .LVU175
+ 691 008a 05F8043C 		strb	r3, [r5, #-4]
+ 692              	.LVL44:
+  52:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
+ 693              		.loc 7 52 20 view .LVU176
+ 694              	.LBE154:
+ 695              	.LBE161:
+  78:DaisyDrone.cpp **** 		osc.SetWaveform(osc.WAVE_SIN);
+ 696              		.loc 6 78 3 is_stmt 1 view .LVU177
+ 697              		.loc 6 78 3 is_stmt 0 view .LVU178
+ 698              	.LBE168:
   68:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
   69:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     */
   70:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     inline void SetWaveform(const uint8_t wf)
   71:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 19
-
-
   72:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         waveform_ = wf < WAVE_LAST ? wf : WAVE_SIN;
- 441              		.loc 6 72 9 view .LVU110
-  53:DaisyDrone.cpp ****     osc.SetAmp(0.5f);
- 442              		.loc 7 53 5 view .LVU111
- 443              	.LBB145:
- 444              	.LBI145:
+ 699              		.loc 7 72 9 is_stmt 1 view .LVU179
+ 700              	.LBB169:
+  79:DaisyDrone.cpp **** 		osc.SetAmp(0.0f);
+ 701              		.loc 6 79 3 view .LVU180
+ 702              	.LBB162:
+ 703              	.LBI158:
   67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 445              		.loc 6 67 17 view .LVU112
- 446              	.LBB146:
+ 704              		.loc 7 67 17 view .LVU181
+ 705              	.LBB160:
   67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 447              		.loc 6 67 41 view .LVU113
-  67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 448              		.loc 6 67 41 is_stmt 0 view .LVU114
- 449              	.LBE146:
- 450              	.LBE145:
-  54:DaisyDrone.cpp ****     osc.SetFreq(440);
- 451              		.loc 7 54 5 is_stmt 1 view .LVU115
- 452              	.LBB148:
- 453              	.LBI139:
-  58:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
- 454              		.loc 6 58 17 view .LVU116
- 455              	.LBB141:
-  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 456              		.loc 6 60 9 view .LVU117
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 457              		.loc 6 61 9 view .LVU118
- 458              	.LBE141:
- 459              	.LBE148:
- 460              	.LBB149:
- 461              	.LBB147:
-  67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 462              		.loc 6 67 46 is_stmt 0 view .LVU119
- 463 008a 84ED018A 		vstr.32	s16, [r4, #4]
- 464              	.LBE147:
- 465              	.LBE149:
- 466              	.LBB150:
- 467              	.LBB142:
-  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 468              		.loc 6 60 20 view .LVU120
- 469 008e 84ED020A 		vstr.32	s0, [r4, #8]
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 470              		.loc 6 61 34 view .LVU121
- 471 0092 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 472              	.LVL27:
- 473              	.LBE142:
- 474              	.LBE150:
-  55:DaisyDrone.cpp **** 
-  56:DaisyDrone.cpp **** 	// NOTE: AGND and DGND must be connected for audio and ADC to work
-  57:DaisyDrone.cpp **** 	hw.StartAudio(audio_callback);
- 475              		.loc 7 57 15 view .LVU122
- 476 0096 2448     		ldr	r0, .L24
- 477 0098 2849     		ldr	r1, .L24+20
- 478              	.LBB151:
- 479              	.LBB143:
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 480              		.loc 6 61 20 view .LVU123
- 481 009a 84ED060A 		vstr.32	s0, [r4, #24]
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 20
+ 706              		.loc 7 67 41 view .LVU182
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 25
 
 
- 482              	.LVL28:
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 483              		.loc 6 61 20 view .LVU124
- 484              	.LBE143:
- 485              	.LBE151:
- 486              		.loc 7 57 2 is_stmt 1 view .LVU125
- 487              		.loc 7 57 15 is_stmt 0 view .LVU126
- 488 009e FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
- 489              	.LVL29:
-  58:DaisyDrone.cpp **** 
-  59:DaisyDrone.cpp **** 	hw.PrintLine("Startup complete");
- 490              		.loc 7 59 2 is_stmt 1 view .LVU127
- 491              	.LBB152:
- 492              	.LBI152:
+  67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
+ 707              		.loc 7 67 41 is_stmt 0 view .LVU183
+ 708              	.LBE160:
+ 709              	.LBE162:
+  75:DaisyDrone.cpp **** 	{
+ 710              		.loc 6 75 2 is_stmt 1 view .LVU184
+  75:DaisyDrone.cpp **** 	{
+ 711              		.loc 6 75 25 view .LVU185
+ 712 008e BD42     		cmp	r5, r7
+ 713 0090 DFD1     		bne	.L28
+ 714              	.LBE169:
+  80:DaisyDrone.cpp **** 	}
+  81:DaisyDrone.cpp **** 
+  82:DaisyDrone.cpp **** 	//const float base_frequency = 65.41f; // C2
+  83:DaisyDrone.cpp **** 	float base_frequency = 440.0f;
+ 715              		.loc 6 83 2 view .LVU186
+ 716              	.LVL45:
+  84:DaisyDrone.cpp **** 	set_tones(base_frequency);
+ 717              		.loc 6 84 2 view .LVU187
+ 718              		.loc 6 84 11 is_stmt 0 view .LVU188
+ 719 0092 9FED160A 		vldr.32	s0, .L32+16
+ 720 0096 FFF7FEFF 		bl	_Z9set_tonesf
+ 721              	.LVL46:
+  85:DaisyDrone.cpp **** 
+  86:DaisyDrone.cpp **** 	// NOTE: AGND and DGND must be connected for audio and ADC to work
+  87:DaisyDrone.cpp **** 	hw.StartAudio(audio_callback);
+ 722              		.loc 6 87 2 is_stmt 1 view .LVU189
+ 723              		.loc 6 87 15 is_stmt 0 view .LVU190
+ 724 009a 1048     		ldr	r0, .L32
+ 725 009c 1449     		ldr	r1, .L32+20
+ 726 009e FFF7FEFF 		bl	_ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
+ 727              	.LVL47:
+  88:DaisyDrone.cpp **** 
+  89:DaisyDrone.cpp **** 	hw.PrintLine("Startup complete");
+ 728              		.loc 6 89 2 is_stmt 1 view .LVU191
+ 729              	.LBB170:
+ 730              	.LBI170:
  127:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
- 493              		.loc 1 127 17 view .LVU128
- 494              	.LBB153:
+ 731              		.loc 1 127 17 view .LVU192
+ 732              	.LBB171:
  129:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 495              		.loc 1 129 23 is_stmt 0 view .LVU129
- 496 00a2 2748     		ldr	r0, .L24+24
- 497 00a4 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
- 498              	.LVL30:
- 499              	.L22:
+ 733              		.loc 1 129 23 is_stmt 0 view .LVU193
+ 734 00a2 1448     		ldr	r0, .L32+24
+ 735 00a4 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+ 736              	.LVL48:
+ 737              	.L29:
  129:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 500              		.loc 1 129 23 view .LVU130
- 501              	.LBE153:
- 502              	.LBE152:
-  60:DaisyDrone.cpp **** 
-  61:DaisyDrone.cpp **** 	while(1)
- 503              		.loc 7 61 2 is_stmt 1 view .LVU131
- 504              	.LBB154:
-  62:DaisyDrone.cpp **** 	{	
-  63:DaisyDrone.cpp **** 		for( int p = 0; p < NUM_POTS; ++p )
- 505              		.loc 7 63 3 view .LVU132
- 506              	.LBB155:
- 507              		.loc 7 63 21 view .LVU133
- 508              	.LBB156:
-  64:DaisyDrone.cpp **** 		{
-  65:DaisyDrone.cpp **** 			const int pot_val = hw.adc.GetFloat(p) * 1000.0f;
- 509              		.loc 7 65 4 view .LVU134
- 510              		.loc 7 65 43 is_stmt 0 view .LVU135
- 511 00a8 9FED218A 		vldr.32	s16, .L24+8
- 512              		.loc 7 65 39 view .LVU136
- 513 00ac 0021     		movs	r1, #0
- 514 00ae 2548     		ldr	r0, .L24+28
- 515 00b0 FFF7FEFF 		bl	_ZNK5daisy9AdcHandle8GetFloatEh
- 516              	.LVL31:
-  66:DaisyDrone.cpp **** 			hw.Print("\t%d", pot_val);
- 517              		.loc 7 66 4 is_stmt 1 view .LVU137
- 518              	.LBB157:
- 519              	.LBI157:
- 119:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
- 520              		.loc 1 119 17 view .LVU138
- 521              	.LBE157:
-  65:DaisyDrone.cpp **** 			hw.Print("\t%d", pot_val);
- 522              		.loc 7 65 43 is_stmt 0 view .LVU139
- 523 00b4 20EE080A 		vmul.f32	s0, s0, s16
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 21
+ 738              		.loc 1 129 23 view .LVU194
+ 739              	.LBE171:
+ 740              	.LBE170:
+  90:DaisyDrone.cpp **** 
+  91:DaisyDrone.cpp **** 	while(1)
+ 741              		.loc 6 91 2 is_stmt 1 view .LVU195
+ 742              	.LBB172:
+  92:DaisyDrone.cpp **** 	{	
+  93:DaisyDrone.cpp **** 		for( int t = 0; t < NUM_TONES; ++t )
+ 743              		.loc 6 93 3 view .LVU196
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 26
 
 
- 524              	.LVL32:
- 525              	.LBB160:
- 526              	.LBB158:
- 121:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 527              		.loc 1 121 19 view .LVU140
- 528 00b8 2348     		ldr	r0, .L24+32
- 529 00ba FDEEC07A 		vcvt.s32.f32	s15, s0
- 530 00be 17EE901A 		vmov	r1, s15	@ int
- 531 00c2 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE5PrintEPKcz
- 532              	.LVL33:
- 121:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 533              		.loc 1 121 19 view .LVU141
- 534              	.LBE158:
- 535              	.LBE160:
- 536              	.LBE156:
-  63:DaisyDrone.cpp **** 		{
- 537              		.loc 7 63 3 is_stmt 1 view .LVU142
-  63:DaisyDrone.cpp **** 		{
- 538              		.loc 7 63 21 view .LVU143
- 539              	.LBB163:
-  65:DaisyDrone.cpp **** 			hw.Print("\t%d", pot_val);
- 540              		.loc 7 65 4 view .LVU144
-  65:DaisyDrone.cpp **** 			hw.Print("\t%d", pot_val);
- 541              		.loc 7 65 39 is_stmt 0 view .LVU145
- 542 00c6 0121     		movs	r1, #1
- 543 00c8 1E48     		ldr	r0, .L24+28
- 544 00ca FFF7FEFF 		bl	_ZNK5daisy9AdcHandle8GetFloatEh
- 545              	.LVL34:
- 546              		.loc 7 66 4 is_stmt 1 view .LVU146
- 547              	.LBB161:
- 119:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
- 548              		.loc 1 119 17 view .LVU147
- 549              	.LBE161:
-  65:DaisyDrone.cpp **** 			hw.Print("\t%d", pot_val);
- 550              		.loc 7 65 43 is_stmt 0 view .LVU148
- 551 00ce 20EE080A 		vmul.f32	s0, s0, s16
- 552              	.LVL35:
- 553              	.LBB162:
- 554              	.LBB159:
- 121:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 555              		.loc 1 121 19 view .LVU149
- 556 00d2 1D48     		ldr	r0, .L24+32
- 557 00d4 FDEEC07A 		vcvt.s32.f32	s15, s0
- 558 00d8 17EE901A 		vmov	r1, s15	@ int
- 559 00dc FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE5PrintEPKcz
- 560              	.LVL36:
- 121:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 561              		.loc 1 121 19 view .LVU150
- 562              	.LBE159:
- 563              	.LBE162:
- 564              	.LBE163:
-  63:DaisyDrone.cpp **** 		{
- 565              		.loc 7 63 3 is_stmt 1 view .LVU151
-  63:DaisyDrone.cpp **** 		{
- 566              		.loc 7 63 21 view .LVU152
- 567              	.LBE155:
-  67:DaisyDrone.cpp **** 		}
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 22
-
-
-  68:DaisyDrone.cpp **** 		hw.PrintLine("");
- 568              		.loc 7 68 3 view .LVU153
- 569              	.LBB164:
- 570              	.LBI164:
- 127:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     {
- 571              		.loc 1 127 17 view .LVU154
- 572              	.LBB165:
- 129:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 573              		.loc 1 129 23 is_stmt 0 view .LVU155
- 574 00e0 1A48     		ldr	r0, .L24+36
- 575 00e2 FFF7FEFF 		bl	_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
- 576              	.LVL37:
- 129:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     }
- 577              		.loc 1 129 23 view .LVU156
- 578              	.LBE165:
- 579              	.LBE164:
-  69:DaisyDrone.cpp **** 
-  70:DaisyDrone.cpp **** 		const float pot_val = hw.adc.GetFloat(0);
- 580              		.loc 7 70 3 is_stmt 1 view .LVU157
- 581              		.loc 7 70 40 is_stmt 0 view .LVU158
- 582 00e6 0021     		movs	r1, #0
- 583 00e8 1648     		ldr	r0, .L24+28
- 584 00ea FFF7FEFF 		bl	_ZNK5daisy9AdcHandle8GetFloatEh
- 585              	.LVL38:
-  71:DaisyDrone.cpp **** 		osc.SetAmp(pot_val);
-  72:DaisyDrone.cpp **** 		osc.SetFreq(pot_val*2000.0f);
- 586              		.loc 7 72 14 view .LVU159
- 587 00ee DFED187A 		vldr.32	s15, .L24+40
-  70:DaisyDrone.cpp **** 		osc.SetAmp(pot_val);
- 588              		.loc 7 70 40 view .LVU160
- 589 00f2 B0EE408A 		vmov.f32	s16, s0
- 590              	.LVL39:
-  71:DaisyDrone.cpp **** 		osc.SetAmp(pot_val);
- 591              		.loc 7 71 3 is_stmt 1 view .LVU161
- 592              	.LBB166:
- 593              	.LBI166:
+ 744              	.LBB173:
+ 745              		.loc 6 93 21 view .LVU197
+ 746              	.LBB174:
+  94:DaisyDrone.cpp **** 		{
+  95:DaisyDrone.cpp **** 			const float pot_val = hw.adc.GetFloat(t);
+ 747              		.loc 6 95 4 view .LVU198
+ 748              		.loc 6 95 41 is_stmt 0 view .LVU199
+ 749 00a8 0021     		movs	r1, #0
+ 750 00aa 1348     		ldr	r0, .L32+28
+ 751 00ac FFF7FEFF 		bl	_ZNK5daisy9AdcHandle8GetFloatEh
+ 752              	.LVL49:
+  96:DaisyDrone.cpp **** 			//const int pot_val_int = pot_val * 1000;
+  97:DaisyDrone.cpp **** 			//hw.Print("%d ", pot_val_int);
+  98:DaisyDrone.cpp **** 
+  99:DaisyDrone.cpp **** 			oscillators[t].SetAmp(pot_val);
+ 753              		.loc 6 99 4 is_stmt 1 view .LVU200
+ 754              	.LBB175:
+ 755              	.LBI175:
   67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 594              		.loc 6 67 17 view .LVU162
- 595              	.LBB167:
+ 756              		.loc 7 67 17 view .LVU201
+ 757              	.LBB176:
   67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 596              		.loc 6 67 41 view .LVU163
- 597              	.LBE167:
- 598              	.LBE166:
- 599              	.LBB169:
- 600              	.LBB170:
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 601              		.loc 6 61 34 is_stmt 0 view .LVU164
- 602 00f6 0D48     		ldr	r0, .L24+4
- 603              	.LBE170:
- 604              	.LBE169:
- 605              		.loc 7 72 14 view .LVU165
- 606 00f8 20EE270A 		vmul.f32	s0, s0, s15
- 607              	.LVL40:
- 608              	.LBB173:
- 609              	.LBB168:
+ 758              		.loc 7 67 41 view .LVU202
+ 759              	.LBE176:
+ 760              	.LBE175:
+  95:DaisyDrone.cpp **** 			//const int pot_val_int = pot_val * 1000;
+ 761              		.loc 6 95 41 is_stmt 0 view .LVU203
+ 762 00b0 0121     		movs	r1, #1
+ 763 00b2 1148     		ldr	r0, .L32+28
+ 764              	.LBB180:
+ 765              	.LBB177:
   67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 610              		.loc 6 67 46 view .LVU166
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 23
-
-
- 611 00fc 84ED018A 		vstr.32	s16, [r4, #4]
- 612              	.LVL41:
+ 766              		.loc 7 67 46 view .LVU204
+ 767 00b4 84ED010A 		vstr.32	s0, [r4, #4]
+ 768              	.LVL50:
   67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
- 613              		.loc 6 67 46 view .LVU167
- 614              	.LBE168:
- 615              	.LBE173:
- 616              		.loc 7 72 3 is_stmt 1 view .LVU168
- 617              	.LBB174:
- 618              	.LBI169:
-  58:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     {
- 619              		.loc 6 58 17 view .LVU169
- 620              	.LBB171:
-  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 621              		.loc 6 60 9 view .LVU170
-  60:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****         phase_inc_ = CalcPhaseInc(f);
- 622              		.loc 6 60 20 is_stmt 0 view .LVU171
- 623 0100 84ED020A 		vstr.32	s0, [r4, #8]
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 624              		.loc 6 61 9 is_stmt 1 view .LVU172
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 625              		.loc 6 61 34 is_stmt 0 view .LVU173
- 626 0104 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
- 627              	.LVL42:
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 628              		.loc 6 61 34 view .LVU174
- 629 0108 F0EE407A 		vmov.f32	s15, s0
- 630              	.LBE171:
- 631              	.LBE174:
-  73:DaisyDrone.cpp **** 
-  74:DaisyDrone.cpp **** 		led1.Set(pot_val);
- 632              		.loc 7 74 11 view .LVU175
- 633 010c 01A8     		add	r0, sp, #4
- 634 010e B0EE480A 		vmov.f32	s0, s16
- 635              	.LBB175:
- 636              	.LBB172:
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 637              		.loc 6 61 20 view .LVU176
- 638 0112 C4ED067A 		vstr.32	s15, [r4, #24]
- 639              	.LVL43:
-  61:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     }
- 640              		.loc 6 61 20 view .LVU177
- 641              	.LBE172:
- 642              	.LBE175:
- 643              		.loc 7 74 3 is_stmt 1 view .LVU178
- 644              		.loc 7 74 11 is_stmt 0 view .LVU179
- 645 0116 FFF7FEFF 		bl	_ZN5daisy3Led3SetEf
- 646              	.LVL44:
-  75:DaisyDrone.cpp **** 		led1.Update();
- 647              		.loc 7 75 3 is_stmt 1 view .LVU180
- 648              		.loc 7 75 14 is_stmt 0 view .LVU181
- 649 011a 01A8     		add	r0, sp, #4
- 650 011c FFF7FEFF 		bl	_ZN5daisy3Led6UpdateEv
- 651              	.LVL45:
-  76:DaisyDrone.cpp **** 
-  77:DaisyDrone.cpp ****         //wait 1 ms
-  78:DaisyDrone.cpp ****         System::Delay(1);		
- 652              		.loc 7 78 9 is_stmt 1 view .LVU182
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 24
+ 769              		.loc 7 67 46 view .LVU205
+ 770              	.LBE177:
+ 771              	.LBE180:
+ 772              	.LBE174:
+  93:DaisyDrone.cpp **** 		{
+ 773              		.loc 6 93 3 is_stmt 1 view .LVU206
+  93:DaisyDrone.cpp **** 		{
+ 774              		.loc 6 93 21 view .LVU207
+ 775              	.LBB183:
+  95:DaisyDrone.cpp **** 			//const int pot_val_int = pot_val * 1000;
+ 776              		.loc 6 95 4 view .LVU208
+  95:DaisyDrone.cpp **** 			//const int pot_val_int = pot_val * 1000;
+ 777              		.loc 6 95 41 is_stmt 0 view .LVU209
+ 778 00b8 FFF7FEFF 		bl	_ZNK5daisy9AdcHandle8GetFloatEh
+ 779              	.LVL51:
+ 780              		.loc 6 99 4 is_stmt 1 view .LVU210
+ 781              	.LBB181:
+  67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
+ 782              		.loc 7 67 17 view .LVU211
+ 783              	.LBB178:
+  67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 27
 
 
- 653              		.loc 7 78 22 is_stmt 0 view .LVU183
- 654 0120 0120     		movs	r0, #1
- 655 0122 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
- 656              	.LVL46:
- 657              	.LBE154:
-  61:DaisyDrone.cpp **** 	{	
- 658              		.loc 7 61 2 is_stmt 1 view .LVU184
- 659 0126 BFE7     		b	.L22
- 660              	.L25:
- 661              		.align	2
- 662              	.L24:
- 663 0128 00000000 		.word	.LANCHOR1
- 664 012c 00000000 		.word	.LANCHOR0
- 665 0130 00007A44 		.word	1148846080
- 666 0134 0000C842 		.word	1120403456
- 667 0138 0000DC43 		.word	1138491392
- 668 013c 00000000 		.word	_Z14audio_callbackPKPKfPPfj
- 669 0140 00000000 		.word	.LC0
- 670 0144 18000000 		.word	.LANCHOR1+24
- 671 0148 14000000 		.word	.LC1
- 672 014c 18000000 		.word	.LC2
- 673 0150 0000FA44 		.word	1157234688
- 674              		.cfi_endproc
- 675              	.LFE4270:
- 677              		.section	.text.startup._GLOBAL__sub_I_hw,"ax",%progbits
- 678              		.align	1
- 679              		.p2align 2,,3
- 680              		.syntax unified
- 681              		.thumb
- 682              		.thumb_func
- 684              	_GLOBAL__sub_I_hw:
- 685              	.LFB4829:
-  79:DaisyDrone.cpp **** 	}
-  80:DaisyDrone.cpp **** }
- 686              		.loc 7 80 1 view -0
- 687              		.cfi_startproc
- 688              		@ args = 0, pretend = 0, frame = 0
- 689              		@ frame_needed = 0, uses_anonymous_args = 0
- 690              	.LBB196:
- 691              	.LBI196:
- 692              		.loc 7 80 1 view .LVU186
- 693              	.LVL47:
- 694              	.LBB197:
- 695              	.LBB198:
- 696              	.LBI198:
+ 784              		.loc 7 67 41 view .LVU212
+ 785              	.LBE178:
+ 786              	.LBE181:
+ 787              	.LBE183:
+ 788              	.LBE173:
+ 100:DaisyDrone.cpp **** 		}
+ 101:DaisyDrone.cpp **** 
+ 102:DaisyDrone.cpp **** 		led1.Set(hw.adc.GetFloat(0));
+ 789              		.loc 6 102 11 is_stmt 0 view .LVU213
+ 790 00bc 0021     		movs	r1, #0
+ 791 00be 0E48     		ldr	r0, .L32+28
+ 792              	.LBB185:
+ 793              	.LBB184:
+ 794              	.LBB182:
+ 795              	.LBB179:
+  67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
+ 796              		.loc 7 67 46 view .LVU214
+ 797 00c0 84ED0B0A 		vstr.32	s0, [r4, #44]
+ 798              	.LVL52:
+  67:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     /** Sets the waveform to be synthesized by the Process() function.
+ 799              		.loc 7 67 46 view .LVU215
+ 800              	.LBE179:
+ 801              	.LBE182:
+ 802              	.LBE184:
+  93:DaisyDrone.cpp **** 		{
+ 803              		.loc 6 93 3 is_stmt 1 view .LVU216
+  93:DaisyDrone.cpp **** 		{
+ 804              		.loc 6 93 21 view .LVU217
+ 805              	.LBE185:
+ 806              		.loc 6 102 3 view .LVU218
+ 807              		.loc 6 102 11 is_stmt 0 view .LVU219
+ 808 00c4 FFF7FEFF 		bl	_ZNK5daisy9AdcHandle8GetFloatEh
+ 809              	.LVL53:
+ 810              		.loc 6 102 11 view .LVU220
+ 811 00c8 01A8     		add	r0, sp, #4
+ 812 00ca FFF7FEFF 		bl	_ZN5daisy3Led3SetEf
+ 813              	.LVL54:
+ 103:DaisyDrone.cpp **** 		led1.Update();
+ 814              		.loc 6 103 3 is_stmt 1 view .LVU221
+ 815              		.loc 6 103 14 is_stmt 0 view .LVU222
+ 816 00ce 01A8     		add	r0, sp, #4
+ 817 00d0 FFF7FEFF 		bl	_ZN5daisy3Led6UpdateEv
+ 818              	.LVL55:
+ 104:DaisyDrone.cpp **** 
+ 105:DaisyDrone.cpp ****         //wait 1 ms
+ 106:DaisyDrone.cpp ****         System::Delay(1);		
+ 819              		.loc 6 106 9 is_stmt 1 view .LVU223
+ 820              		.loc 6 106 22 is_stmt 0 view .LVU224
+ 821 00d4 0120     		movs	r0, #1
+ 822 00d6 FFF7FEFF 		bl	_ZN5daisy6System5DelayEm
+ 823              	.LVL56:
+ 824              	.LBE172:
+  91:DaisyDrone.cpp **** 	{	
+ 825              		.loc 6 91 2 is_stmt 1 view .LVU225
+ 826 00da E5E7     		b	.L29
+ 827              	.L33:
+ 828              		.align	2
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 28
+
+
+ 829              	.L32:
+ 830 00dc 00000000 		.word	.LANCHOR1
+ 831 00e0 00000000 		.word	.LANCHOR0
+ 832 00e4 00007A44 		.word	1148846080
+ 833 00e8 0000C842 		.word	1120403456
+ 834 00ec 0000DC43 		.word	1138491392
+ 835 00f0 00000000 		.word	_Z14audio_callbackPKPKfPPfj
+ 836 00f4 00000000 		.word	.LC3
+ 837 00f8 18000000 		.word	.LANCHOR1+24
+ 838              		.cfi_endproc
+ 839              	.LFE4271:
+ 841              		.section	.text.startup._GLOBAL__sub_I_hw,"ax",%progbits
+ 842              		.align	1
+ 843              		.p2align 2,,3
+ 844              		.syntax unified
+ 845              		.thumb
+ 846              		.thumb_func
+ 848              	_GLOBAL__sub_I_hw:
+ 849              	.LFB4832:
+ 107:DaisyDrone.cpp **** 	}
+ 108:DaisyDrone.cpp **** }
+ 850              		.loc 6 108 1 view -0
+ 851              		.cfi_startproc
+ 852              		@ args = 0, pretend = 0, frame = 0
+ 853              		@ frame_needed = 0, uses_anonymous_args = 0
+ 854              	.LBB205:
+ 855              	.LBI205:
+ 856              		.loc 6 108 1 view .LVU227
+ 857              	.LVL57:
+ 858              	.LBB206:
+ 859              	.LBB207:
+ 860              	.LBI207:
   21:../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_seed.h ****     ~DaisySeed() {}
- 697              		.loc 1 21 5 view .LVU187
- 698              	.LBB199:
- 699              	.LBB200:
- 700              	.LBI200:
- 701              		.file 9 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h"
+ 861              		.loc 1 21 5 view .LVU228
+ 862              	.LBB208:
+ 863              	.LBB209:
+ 864              	.LBI209:
+ 865              		.file 9 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h"
    1:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** #ifndef DSY_QSPI
    2:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** #define DSY_QSPI /**< Macro */
    3:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** 
    4:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** #ifndef UNIT_TEST // for unit tests, a dummy implementation
    5:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** 
    6:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** #include <cstdint>
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 25
-
-
    7:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** #include "daisy_core.h" // Added for dsy_gpio_pin typedef
    8:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** 
    9:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** #define DSY_QSPI_TEXT       \
@@ -1454,6 +1678,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   17:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         ".qspiflash_bss"))) /**< used for reading memory in memory_mapped mode. */
   18:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** 
   19:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** namespace daisy
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 29
+
+
   20:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** {
   21:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** /** @addtogroup serial
   22:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** @{
@@ -1498,9 +1725,6 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   61:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         {
   62:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****             IS25LP080D,  /**< & */
   63:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****             IS25LP064A,  /**< & */
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 26
-
-
   64:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****             DEVICE_LAST, /**< & */
   65:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         };
   66:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** 
@@ -1514,6 +1738,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   74:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         enum Mode
   75:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         {
   76:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****             MEMORY_MAPPED,    /**< & */
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 30
+
+
   77:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****             INDIRECT_POLLING, /**< & */
   78:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****             MODE_LAST,
   79:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         };
@@ -1558,9 +1785,6 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
  118:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         \param address Address to write to
  119:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         \param size Buffer size
  120:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         \param buffer Buffer to write
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 27
-
-
  121:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         \return Result::OK or Result::ERR
  122:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         */
  123:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****     Result WritePage(uint32_t address, uint32_t size, uint8_t* buffer);
@@ -1574,6 +1798,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
  131:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         */
  132:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****     Result Write(uint32_t address, uint32_t size, uint8_t* buffer);
  133:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** 
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 31
+
+
  134:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****     /** 
  135:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         Erases the area specified on the chip.
  136:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****         Erasures will happen by 4K, 32K or 64K increments.
@@ -1607,80 +1834,77 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
  164:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****     void* GetData(uint32_t offset = 0);
  165:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h **** 
  166:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/qspi.h ****     QSPIHandle() : pimpl_(nullptr) {}
- 702              		.loc 9 166 5 view .LVU188
- 703              	.LBE200:
- 704              	.LBE199:
- 705              	.LBE198:
- 706              	.LBE197:
- 707              	.LBE196:
- 708              		.loc 7 80 1 is_stmt 0 view .LVU189
- 709 0000 08B5     		push	{r3, lr}
- 710              		.cfi_def_cfa_offset 8
- 711              		.cfi_offset 3, -8
- 712              		.cfi_offset 14, -4
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 28
+ 866              		.loc 9 166 5 view .LVU229
+ 867              	.LBE209:
+ 868              	.LBE208:
+ 869              	.LBE207:
+ 870              	.LBE206:
+ 871              	.LBE205:
+ 872              		.loc 6 108 1 is_stmt 0 view .LVU230
+ 873 0000 10B5     		push	{r4, lr}
+ 874              		.cfi_def_cfa_offset 8
+ 875              		.cfi_offset 4, -8
+ 876              		.cfi_offset 14, -4
+ 877              	.LBB231:
+ 878              	.LBB229:
+ 879              	.LBB227:
+ 880              	.LBB225:
+ 881              	.LBB214:
+ 882              	.LBB210:
+ 883              	.LBB211:
+ 884              		.loc 9 166 34 view .LVU231
+ 885 0002 0848     		ldr	r0, .L36
+ 886 0004 0024     		movs	r4, #0
+ 887              	.LBE211:
+ 888              	.LBE210:
+ 889              	.LBE214:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 32
 
 
- 713              	.LBB223:
- 714              	.LBB221:
- 715              	.LBB218:
- 716              	.LBB216:
- 717              	.LBB205:
- 718              	.LBB201:
- 719              	.LBB202:
- 720              		.loc 9 166 34 view .LVU190
- 721 0002 0848     		ldr	r0, .L28
- 722 0004 0023     		movs	r3, #0
- 723              	.LBE202:
- 724              	.LBE201:
- 725              	.LBE205:
- 726              	.LBE216:
- 727              	.LBE218:
-  10:DaisyDrone.cpp **** 
- 728              		.loc 7 10 11 view .LVU191
- 729 0006 084A     		ldr	r2, .L28+4
- 730 0008 0849     		ldr	r1, .L28+8
- 731              	.LBB219:
- 732              	.LBB217:
- 733              	.LBB206:
- 734              	.LBB204:
- 735              	.LBB203:
- 736              		.loc 9 166 34 view .LVU192
- 737 000a 0360     		str	r3, [r0]
- 738              	.LVL48:
- 739              		.loc 9 166 34 view .LVU193
- 740              	.LBE203:
- 741              	.LBE204:
- 742              	.LBE206:
- 743              	.LBB207:
- 744              	.LBI207:
+ 890              	.LBE225:
+ 891              	.LBE227:
+   7:DaisyDrone.cpp **** 
+ 892              		.loc 6 7 11 view .LVU232
+ 893 0006 084A     		ldr	r2, .L36+4
+ 894 0008 0849     		ldr	r1, .L36+8
+ 895              	.LBB228:
+ 896              	.LBB226:
+ 897              	.LBB215:
+ 898              	.LBB213:
+ 899              	.LBB212:
+ 900              		.loc 9 166 34 view .LVU233
+ 901 000a 0460     		str	r4, [r0]
+ 902              	.LVL58:
+ 903              		.loc 9 166 34 view .LVU234
+ 904              	.LBE212:
+ 905              	.LBE213:
+ 906              	.LBE215:
+ 907              	.LBB216:
+ 908              	.LBI216:
   62:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 745              		.loc 5 62 5 is_stmt 1 view .LVU194
- 746              	.LBB208:
- 747              	.LBB209:
+ 909              		.loc 5 62 5 is_stmt 1 view .LVU235
+ 910              	.LBB217:
+ 911              	.LBB218:
   62:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 748              		.loc 5 62 35 is_stmt 0 view .LVU195
- 749 000c 4361     		str	r3, [r0, #20]
- 750              	.LVL49:
+ 912              		.loc 5 62 35 is_stmt 0 view .LVU236
+ 913 000c 4461     		str	r4, [r0, #20]
+ 914              	.LVL59:
   62:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/audio.h ****     ~AudioHandle() {}
- 751              		.loc 5 62 35 view .LVU196
- 752              	.LBE209:
- 753              	.LBE208:
- 754              	.LBE207:
- 755              	.LBB210:
- 756              	.LBI210:
+ 915              		.loc 5 62 35 view .LVU237
+ 916              	.LBE218:
+ 917              	.LBE217:
+ 918              	.LBE216:
+ 919              	.LBB219:
+ 920              	.LBI219:
   84:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h ****     ~AdcHandle() {}
- 757              		.loc 4 84 5 is_stmt 1 view .LVU197
+ 921              		.loc 4 84 5 is_stmt 1 view .LVU238
   84:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/adc.h ****     ~AdcHandle() {}
- 758              		.loc 4 84 5 is_stmt 0 view .LVU198
- 759              	.LBE210:
- 760              	.LBB211:
- 761              	.LBI211:
- 762              		.file 10 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h"
+ 922              		.loc 4 84 5 is_stmt 0 view .LVU239
+ 923              	.LBE219:
+ 924              	.LBB220:
+ 925              	.LBI220:
+ 926              		.file 10 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h"
    1:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h **** #pragma once
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 29
-
-
    2:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h **** #ifndef DSY_DAC_H
    3:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h **** #define DSY_DAC_H
    4:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h **** 
@@ -1694,6 +1918,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   12:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****  ** Sample and hold mode provides reduced power consumption, but requires a bit more setup.
   13:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****  **
   14:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****  ** For now connecting the DAC through other internal periphearls is also not supported.
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 33
+
+
   15:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****  **
   16:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****  ** Since the DAC channels have dedicated pins we don't need to pass in a pin config like with
   17:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****  ** other modules. However, it is still important to not try to use the DAC pins for anything else.
@@ -1738,9 +1965,6 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   56:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****     {
   57:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****         BITS_8,
   58:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****         BITS_12
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 30
-
-
   59:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****     };
   60:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h **** 
   61:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****     /** Sets whether the DAC output is buffered for higher drive ability. */
@@ -1754,6 +1978,9 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   69:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****     struct Config
   70:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****     {
   71:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****         /** Target Samplerate in Hz used to configure the internal 
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 34
+
+
   72:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****          ** timebase for DMA mode. Does nothing in POLLING mode.
   73:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****          ** If the value is 0 at Init time this will default to 48000Hz 
   74:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****          ** otherwise the driver will attempt meet the target.*/
@@ -1766,181 +1993,186 @@ ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 1
   81:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****     };
   82:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h **** 
   83:../../Documents/Daisy/DaisyExamples/libdaisy//src/per/dac.h ****     DacHandle() : pimpl_(nullptr) {}
- 763              		.loc 10 83 5 is_stmt 1 view .LVU199
- 764              	.LBB212:
- 765              	.LBB213:
- 766              		.loc 10 83 33 is_stmt 0 view .LVU200
- 767 000e 0362     		str	r3, [r0, #32]
- 768              	.LVL50:
- 769              		.loc 10 83 33 view .LVU201
- 770              	.LBE213:
- 771              	.LBE212:
- 772              	.LBE211:
- 773              	.LBB214:
- 774              	.LBI214:
+ 927              		.loc 10 83 5 is_stmt 1 view .LVU240
+ 928              	.LBB221:
+ 929              	.LBB222:
+ 930              		.loc 10 83 33 is_stmt 0 view .LVU241
+ 931 000e 0462     		str	r4, [r0, #32]
+ 932              	.LVL60:
+ 933              		.loc 10 83 33 view .LVU242
+ 934              	.LBE222:
+ 935              	.LBE221:
+ 936              	.LBE220:
+ 937              	.LBB223:
+ 938              	.LBI223:
   40:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h **** 
- 775              		.loc 3 40 5 is_stmt 1 view .LVU202
+ 939              		.loc 3 40 5 is_stmt 1 view .LVU243
   40:../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/usb.h **** 
- 776              		.loc 3 40 5 is_stmt 0 view .LVU203
- 777              	.LBE214:
- 778              	.LBB215:
- 779              	.LBI215:
+ 940              		.loc 3 40 5 is_stmt 0 view .LVU244
+ 941              	.LBE223:
+ 942              	.LBB224:
+ 943              	.LBI224:
   77:../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h ****     ~System() {}
- 780              		.loc 2 77 5 is_stmt 1 view .LVU204
+ 944              		.loc 2 77 5 is_stmt 1 view .LVU245
   77:../../Documents/Daisy/DaisyExamples/libdaisy//src/sys/system.h ****     ~System() {}
- 781              		.loc 2 77 5 is_stmt 0 view .LVU205
- 782              	.LBE215:
- 783              	.LBE217:
- 784              	.LBE219:
-  10:DaisyDrone.cpp **** 
- 785              		.loc 7 10 11 view .LVU206
- 786 0010 FFF7FEFF 		bl	__aeabi_atexit
- 787              	.LVL51:
- 788              	.LBB220:
- 789              	.LBI220:
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 31
+ 945              		.loc 2 77 5 is_stmt 0 view .LVU246
+ 946              	.LBE224:
+ 947              	.LBE226:
+ 948              	.LBE228:
+   7:DaisyDrone.cpp **** 
+ 949              		.loc 6 7 11 view .LVU247
+ 950 0010 FFF7FEFF 		bl	__aeabi_atexit
+ 951              	.LVL61:
+  11:DaisyDrone.cpp **** 
+ 952              		.loc 6 11 33 is_stmt 1 view .LVU248
+  11:DaisyDrone.cpp **** 
+ 953              		.loc 6 11 12 is_stmt 0 view .LVU249
+ 954 0014 2046     		mov	r0, r4
+ 955 0016 044A     		ldr	r2, .L36+4
+ 956 0018 0549     		ldr	r1, .L36+12
+ 957              	.LBE229:
+ 958              	.LBE231:
+ 959              		.loc 6 108 1 view .LVU250
+ 960 001a BDE81040 		pop	{r4, lr}
+ 961              		.cfi_restore 14
+ 962              		.cfi_restore 4
+ 963              		.cfi_def_cfa_offset 0
+ 964              	.LBB232:
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 35
 
 
-  15:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 790              		.loc 6 15 5 is_stmt 1 view .LVU207
-  15:../../Documents/Daisy/DaisyExamples/daisysp//Source/Synthesis/oscillator.h ****     ~Oscillator() {}
- 791              		.loc 6 15 5 is_stmt 0 view .LVU208
- 792              	.LBE220:
-  12:DaisyDrone.cpp **** 
- 793              		.loc 7 12 12 view .LVU209
- 794 0014 044A     		ldr	r2, .L28+4
- 795 0016 0649     		ldr	r1, .L28+12
- 796 0018 0648     		ldr	r0, .L28+16
- 797              	.LBE221:
- 798              	.LBE223:
- 799              		.loc 7 80 1 view .LVU210
- 800 001a BDE80840 		pop	{r3, lr}
- 801              		.cfi_restore 14
- 802              		.cfi_restore 3
- 803              		.cfi_def_cfa_offset 0
- 804              	.LBB224:
- 805              	.LBB222:
-  12:DaisyDrone.cpp **** 
- 806              		.loc 7 12 12 view .LVU211
- 807 001e FFF7FEBF 		b	__aeabi_atexit
- 808              	.LVL52:
- 809              	.L29:
- 810 0022 00BF     		.align	2
- 811              	.L28:
- 812 0024 00000000 		.word	.LANCHOR1
- 813 0028 00000000 		.word	__dso_handle
- 814 002c 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 815 0030 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
- 816 0034 00000000 		.word	.LANCHOR0
- 817              	.LBE222:
- 818              	.LBE224:
- 819              		.cfi_endproc
- 820              	.LFE4829:
- 822              		.section	.init_array,"aw",%init_array
- 823              		.align	2
- 824 0000 00000000 		.word	_GLOBAL__sub_I_hw(target1)
- 825              		.global	osc
- 826              		.global	hw
- 827              		.section	.bss.hw,"aw",%nobits
- 828              		.align	2
- 829              		.set	.LANCHOR1,. + 0
- 832              	hw:
- 833 0000 00000000 		.space	60
- 833      00000000 
- 833      00000000 
- 833      00000000 
- 833      00000000 
- 834              		.section	.bss.osc,"aw",%nobits
- 835              		.align	2
- 836              		.set	.LANCHOR0,. + 0
- 839              	osc:
- 840 0000 00000000 		.space	40
- 840      00000000 
- 840      00000000 
- 840      00000000 
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 32
+ 965              	.LBB230:
+  11:DaisyDrone.cpp **** 
+ 966              		.loc 6 11 12 view .LVU251
+ 967 001e FFF7FEBF 		b	__aeabi_atexit
+ 968              	.LVL62:
+ 969              	.L37:
+ 970 0022 00BF     		.align	2
+ 971              	.L36:
+ 972 0024 00000000 		.word	.LANCHOR1
+ 973 0028 00000000 		.word	__dso_handle
+ 974 002c 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 975 0030 00000000 		.word	__tcf_0
+ 976              	.LBE230:
+ 977              	.LBE232:
+ 978              		.cfi_endproc
+ 979              	.LFE4832:
+ 981              		.section	.init_array,"aw",%init_array
+ 982              		.align	2
+ 983 0000 00000000 		.word	_GLOBAL__sub_I_hw(target1)
+ 984              		.global	oscillators
+ 985              		.global	hw
+ 986              		.section	.rodata
+ 987              		.align	2
+ 988              		.set	.LANCHOR2,. + 0
+ 989              	.LC0:
+ 990 0000 00000000 		.word	0
+ 991 0004 03000000 		.word	3
+ 992 0008 07000000 		.word	7
+ 993 000c 0C000000 		.word	12
+ 994              		.section	.bss.hw,"aw",%nobits
+ 995              		.align	2
+ 996              		.set	.LANCHOR1,. + 0
+ 999              	hw:
+ 1000 0000 00000000 		.space	60
+ 1000      00000000 
+ 1000      00000000 
+ 1000      00000000 
+ 1000      00000000 
+ 1001              		.section	.bss.oscillators,"aw",%nobits
+ 1002              		.align	2
+ 1003              		.set	.LANCHOR0,. + 0
+ 1006              	oscillators:
+ 1007 0000 00000000 		.space	80
+ 1007      00000000 
+ 1007      00000000 
+ 1007      00000000 
+ 1007      00000000 
+ 1008              		.text
+ 1009              	.Letext0:
+ 1010              		.file 11 "/Applications/ARM/arm-none-eabi/include/machine/_default_types.h"
+ 1011              		.file 12 "/Applications/ARM/arm-none-eabi/include/sys/_stdint.h"
+ 1012              		.file 13 "/Applications/ARM/arm-none-eabi/include/stdint.h"
+ 1013              		.file 14 "/Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h"
+ 1014              		.file 15 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cmath"
+ 1015              		.file 16 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h"
+ 1016              		.file 17 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdlib"
+ 1017              		.file 18 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdint"
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 36
 
 
- 840      00000000 
- 841              		.text
- 842              	.Letext0:
- 843              		.file 11 "/Applications/ARM/arm-none-eabi/include/machine/_default_types.h"
- 844              		.file 12 "/Applications/ARM/arm-none-eabi/include/sys/_stdint.h"
- 845              		.file 13 "/Applications/ARM/arm-none-eabi/include/stdint.h"
- 846              		.file 14 "/Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h"
- 847              		.file 15 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cmath"
- 848              		.file 16 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/std_abs.h"
- 849              		.file 17 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdlib"
- 850              		.file 18 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdint"
- 851              		.file 19 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/type_traits"
- 852              		.file 20 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/debug/debug.h"
- 853              		.file 21 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+dp/hard/bit
- 854              		.file 22 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h"
- 855              		.file 23 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h"
- 856              		.file 24 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h"
- 857              		.file 25 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdarg"
- 858              		.file 26 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdio"
- 859              		.file 27 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cwchar"
- 860              		.file 28 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/clocale"
- 861              		.file 29 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/basic_string.h"
- 862              		.file 30 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h"
- 863              		.file 31 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstring"
- 864              		.file 32 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h"
- 865              		.file 33 "/Applications/ARM/arm-none-eabi/include/sys/_types.h"
- 866              		.file 34 "/Applications/ARM/arm-none-eabi/include/sys/reent.h"
- 867              		.file 35 "/Applications/ARM/arm-none-eabi/include/sys/lock.h"
- 868              		.file 36 "/Applications/ARM/arm-none-eabi/include/math.h"
- 869              		.file 37 "/Applications/ARM/arm-none-eabi/include/stdlib.h"
- 870              		.file 38 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/math.h"
- 871              		.file 39 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/stdlib.h"
- 872              		.file 40 "../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_core.h"
- 873              		.file 41 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/tim.h"
- 874              		.file 42 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/sai.h"
- 875              		.file 43 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/logger_impl.h"
- 876              		.file 44 "../../Documents/Daisy/DaisyExamples/libdaisy//src/util/wav_format.h"
- 877              		.file 45 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/logger.h"
- 878              		.file 46 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/gpio.h"
- 879              		.file 47 "../../Documents/Daisy/DaisyExamples/libdaisy//src/dev/sdram.h"
- 880              		.file 48 "/Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h"
- 881              		.file 49 "/Applications/ARM/arm-none-eabi/include/stdio.h"
- 882              		.file 50 "../../Documents/Daisy/DaisyExamples/daisysp//Source/Control/adenv.h"
- 883              		.file 51 "../../Documents/Daisy/DaisyExamples/daisysp//Source/Utility/dsp.h"
- 884              		.file 52 "/Applications/ARM/arm-none-eabi/include/wchar.h"
- 885              		.file 53 "/Applications/ARM/arm-none-eabi/include/locale.h"
- 886              		.file 54 "/Applications/ARM/arm-none-eabi/include/string.h"
- 887              		.file 55 "../../Documents/Daisy/DaisyExamples/libdaisy//src/dev/sr_595.h"
- 888              		.file 56 "<built-in>"
-ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s 			page 33
+ 1018              		.file 19 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/type_traits"
+ 1019              		.file 20 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/debug/debug.h"
+ 1020              		.file 21 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+dp/hard/bit
+ 1021              		.file 22 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h"
+ 1022              		.file 23 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/stl_pair.h"
+ 1023              		.file 24 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/exception_ptr.h"
+ 1024              		.file 25 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdarg"
+ 1025              		.file 26 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstdio"
+ 1026              		.file 27 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cwchar"
+ 1027              		.file 28 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/clocale"
+ 1028              		.file 29 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/basic_string.h"
+ 1029              		.file 30 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/stl_iterator.h"
+ 1030              		.file 31 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/cstring"
+ 1031              		.file 32 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/bits/predefined_ops.h"
+ 1032              		.file 33 "/Applications/ARM/arm-none-eabi/include/sys/_types.h"
+ 1033              		.file 34 "/Applications/ARM/arm-none-eabi/include/sys/reent.h"
+ 1034              		.file 35 "/Applications/ARM/arm-none-eabi/include/sys/lock.h"
+ 1035              		.file 36 "/Applications/ARM/arm-none-eabi/include/math.h"
+ 1036              		.file 37 "/Applications/ARM/arm-none-eabi/include/stdlib.h"
+ 1037              		.file 38 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/math.h"
+ 1038              		.file 39 "/Applications/ARM/arm-none-eabi/include/c++/10.3.1/stdlib.h"
+ 1039              		.file 40 "../../Documents/Daisy/DaisyExamples/libdaisy//src/daisy_core.h"
+ 1040              		.file 41 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/tim.h"
+ 1041              		.file 42 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/sai.h"
+ 1042              		.file 43 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/logger_impl.h"
+ 1043              		.file 44 "../../Documents/Daisy/DaisyExamples/libdaisy//src/util/wav_format.h"
+ 1044              		.file 45 "../../Documents/Daisy/DaisyExamples/libdaisy//src/hid/logger.h"
+ 1045              		.file 46 "../../Documents/Daisy/DaisyExamples/libdaisy//src/per/gpio.h"
+ 1046              		.file 47 "../../Documents/Daisy/DaisyExamples/libdaisy//src/dev/sdram.h"
+ 1047              		.file 48 "/Applications/ARM/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h"
+ 1048              		.file 49 "/Applications/ARM/arm-none-eabi/include/stdio.h"
+ 1049              		.file 50 "../../Documents/Daisy/DaisyExamples/daisysp//Source/Control/adenv.h"
+ 1050              		.file 51 "../../Documents/Daisy/DaisyExamples/daisysp//Source/Utility/dsp.h"
+ 1051              		.file 52 "/Applications/ARM/arm-none-eabi/include/wchar.h"
+ 1052              		.file 53 "/Applications/ARM/arm-none-eabi/include/locale.h"
+ 1053              		.file 54 "/Applications/ARM/arm-none-eabi/include/string.h"
+ 1054              		.file 55 "../../Documents/Daisy/DaisyExamples/libdaisy//src/dev/sr_595.h"
+ 1055              		.file 56 "<built-in>"
+ARM GAS  /var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s 			page 37
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 DaisyDrone.cpp
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:19     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 $t
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD2Ev
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD1Ev
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:67     .text._ZN7daisysp10OscillatorD2Ev:0000000000000000 $t
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:74     .text._ZN7daisysp10OscillatorD2Ev:0000000000000000 _ZN7daisysp10OscillatorD2Ev
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:74     .text._ZN7daisysp10OscillatorD2Ev:0000000000000000 _ZN7daisysp10OscillatorD1Ev
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:91     .text._Z14audio_callbackPKPKfPPfj:0000000000000000 $t
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:98     .text._Z14audio_callbackPKPKfPPfj:0000000000000000 _Z14audio_callbackPKPKfPPfj
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:173    .text._Z14audio_callbackPKPKfPPfj:0000000000000030 $d
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:178    .text._Z9init_potsv:0000000000000000 $t
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:185    .text._Z9init_potsv:0000000000000000 _Z9init_potsv
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:262    .text._Z9init_potsv:0000000000000048 $d
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:267    .rodata.main.str1.4:0000000000000000 $d
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:277    .text.startup.main:0000000000000000 $t
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:284    .text.startup.main:0000000000000000 main
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:663    .text.startup.main:0000000000000128 $d
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:678    .text.startup._GLOBAL__sub_I_hw:0000000000000000 $t
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:684    .text.startup._GLOBAL__sub_I_hw:0000000000000000 _GLOBAL__sub_I_hw
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:812    .text.startup._GLOBAL__sub_I_hw:0000000000000024 $d
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:823    .init_array:0000000000000000 $d
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:839    .bss.osc:0000000000000000 osc
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:832    .bss.hw:0000000000000000 hw
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:828    .bss.hw:0000000000000000 $d
-/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccIgmdQY.s:835    .bss.osc:0000000000000000 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:19     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 $t
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD2Ev
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:26     .text._ZN5daisy9DaisySeedD2Ev:0000000000000000 _ZN5daisy9DaisySeedD1Ev
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:67     .text.__tcf_0:0000000000000000 $t
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:73     .text.__tcf_0:0000000000000000 __tcf_0
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:87     .text._Z14audio_callbackPKPKfPPfj:0000000000000000 $t
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:94     .text._Z14audio_callbackPKPKfPPfj:0000000000000000 _Z14audio_callbackPKPKfPPfj
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:206    .text._Z14audio_callbackPKPKfPPfj:0000000000000050 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:213    .text._Z8init_adcv:0000000000000000 $t
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:220    .text._Z8init_adcv:0000000000000000 _Z8init_adcv
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:297    .text._Z8init_adcv:0000000000000048 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:302    .rodata._Z9set_tonesf.str1.4:0000000000000000 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:309    .text._Z9set_tonesf:0000000000000000 $t
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:316    .text._Z9set_tonesf:0000000000000000 _Z9set_tonesf
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:502    .text._Z9set_tonesf:0000000000000098 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:511    .rodata.main.str1.4:0000000000000000 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:515    .text.startup.main:0000000000000000 $t
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:522    .text.startup.main:0000000000000000 main
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:830    .text.startup.main:00000000000000dc $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:842    .text.startup._GLOBAL__sub_I_hw:0000000000000000 $t
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:848    .text.startup._GLOBAL__sub_I_hw:0000000000000000 _GLOBAL__sub_I_hw
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:972    .text.startup._GLOBAL__sub_I_hw:0000000000000024 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:982    .init_array:0000000000000000 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:1006   .bss.oscillators:0000000000000000 oscillators
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:999    .bss.hw:0000000000000000 hw
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:987    .rodata:0000000000000000 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:995    .bss.hw:0000000000000000 $d
+/var/folders/j4/zsgv5hks61j070b3g480n1j40000gn/T//ccWpwoAM.s:1002   .bss.oscillators:0000000000000000 $d
                            .group:0000000000000000 _ZN5daisy9DaisySeedD5Ev
-                           .group:0000000000000000 _ZN7daisysp10OscillatorD5Ev
 
 UNDEFINED SYMBOLS
 _ZN7daisysp10Oscillator7ProcessEv
@@ -1948,16 +2180,16 @@ _ZN5daisy9DaisySeed6GetPinEh
 _ZN5daisy16AdcChannelConfig10InitSingleE12dsy_gpio_pin
 _ZN5daisy9AdcHandle4InitEPNS_16AdcChannelConfigEjNS0_12OverSamplingE
 _ZN5daisy9AdcHandle5StartEv
+_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
+powf
+_ZN7daisysp10Oscillator12CalcPhaseIncEf
 _ZN5daisy9DaisySeed9ConfigureEv
 _ZN5daisy9DaisySeed4InitEb
 _ZN5daisy6LoggerILNS_17LoggerDestinationE1EE8StartLogEb
 _ZN5daisy3Led4InitE12dsy_gpio_pinbf
 _ZN5daisy9DaisySeed15AudioSampleRateEv
-_ZN7daisysp10Oscillator12CalcPhaseIncEf
 _ZN5daisy9DaisySeed10StartAudioEPFvPKPKfPPfjE
-_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE9PrintLineEPKcz
 _ZNK5daisy9AdcHandle8GetFloatEh
-_ZN5daisy6LoggerILNS_17LoggerDestinationE1EE5PrintEPKcz
 _ZN5daisy3Led3SetEf
 _ZN5daisy3Led6UpdateEv
 _ZN5daisy6System5DelayEm
