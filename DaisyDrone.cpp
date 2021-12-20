@@ -1,3 +1,5 @@
+#include <array>
+
 #include "daisy_seed.h"
 #include "daisysp.h"
 
@@ -6,8 +8,8 @@ using namespace daisysp;
 
 DaisySeed hw;
 
-const int NUM_TONES(2);
-const int pot_pins[NUM_TONES] = { 15, 16 };
+const int NUM_TONES(3);
+const int pot_pins[NUM_TONES] = { 15, 16, 17 };
 Oscillator oscillators[NUM_TONES];
 
 
@@ -40,13 +42,29 @@ void init_adc()
 
 void set_tones(float base_frequency)
 {
+	const int intervals[] = { 3, 4, 5 };	// 3rd, 7th, octave
+	int interval = 0;
+	int semitone = 0;
+	for( int t = 0; t < NUM_TONES; ++t )
+	{
+		const float freq_mult	= powf( 2.0f, semitone / 12.0f );
+		const float freq		= base_frequency * freq_mult;
+		oscillators[t].SetFreq(freq);
+
+		semitone				+= intervals[interval];
+		interval				= ( interval + 1 ) % sizeof(intervals);
+
+		hw.PrintLine("%d %d %d", semitone, int(freq_mult * 100), int(freq * 100));
+	}
+
+	/*
 	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
 
 	const int semitones[] = { 0, 3, 7, 12 };
 	
 	for( int t = 0; t < NUM_TONES; ++t )
 	{
-		const int semitone = semitones[t];
+		const int semitone		= semitones[t];
 
 		const float freq_mult	= powf( 2.0f, semitone / 12.0f );
 		const float freq		= base_frequency * freq_mult;
@@ -54,6 +72,7 @@ void set_tones(float base_frequency)
 
 		hw.PrintLine("%d %d %d", semitone, int(freq_mult * 100), int(freq * 100));
 	}
+	*/
 }
 
 int main(void)
@@ -75,7 +94,7 @@ int main(void)
 	}
 
 	//const float base_frequency = 65.41f; // C2
-	float base_frequency = 440.0f;
+	float base_frequency = 440;
 	set_tones(base_frequency);
 
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
