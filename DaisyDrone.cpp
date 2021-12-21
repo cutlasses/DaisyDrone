@@ -8,8 +8,8 @@ using namespace daisysp;
 
 DaisySeed hw;
 
-const int NUM_TONES(3);
-const int pot_pins[NUM_TONES] = { 15, 16, 17 };
+const int NUM_TONES(5);
+const int pot_pins[NUM_TONES] = { 15, 16, 17, 18, 19 };
 Oscillator oscillators[NUM_TONES];
 
 
@@ -42,7 +42,8 @@ void init_adc()
 
 void set_tones(float base_frequency)
 {
-	const int intervals[] = { 3, 4, 5 };	// 3rd, 7th, octave
+	constexpr int NUM_INTERVALS(3);
+	const int intervals[NUM_INTERVALS] = { 3, 4, 5 };	// 3rd, 7th, octave
 	int interval = 0;
 	int semitone = 0;
 	for( int t = 0; t < NUM_TONES; ++t )
@@ -51,10 +52,10 @@ void set_tones(float base_frequency)
 		const float freq		= base_frequency * freq_mult;
 		oscillators[t].SetFreq(freq);
 
-		semitone				+= intervals[interval];
-		interval				= ( interval + 1 ) % sizeof(intervals);
+		hw.PrintLine("%d %d %d %d", semitone, interval, int(freq_mult * 100), int(freq * 100));
 
-		hw.PrintLine("%d %d %d", semitone, int(freq_mult * 100), int(freq * 100));
+		semitone				+= intervals[interval];
+		interval				= ( interval + 1 ) % NUM_INTERVALS;
 	}
 
 	/*
@@ -80,7 +81,7 @@ int main(void)
 	hw.Configure();
 	hw.Init();
 
-	hw.StartLog(false/*block until serial connection opened*/);
+	hw.StartLog(true/*block until serial connection opened*/);
 
 	init_adc();
 
@@ -94,7 +95,7 @@ int main(void)
 	}
 
 	//const float base_frequency = 65.41f; // C2
-	float base_frequency = 440;
+	const float base_frequency(440);
 	set_tones(base_frequency);
 
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
@@ -102,14 +103,25 @@ int main(void)
 
 	hw.PrintLine("Startup complete");
 
+	/*
+	oscillators[0].SetFreq(80);
+	oscillators[1].SetFreq(160);
+	oscillators[2].SetFreq(320);
+	oscillators[3].SetFreq(640);
+	oscillators[4].SetFreq(1280);*/
+
 	while(1)
 	{	
+		//hw.Print("pots ");
 		for( int t = 0; t < NUM_TONES; ++t )
 		{
 			const float pot_val = hw.adc.GetFloat(t);
 
+			//hw.Print("%d ", int(pot_val*100));
+
 			oscillators[t].SetAmp(pot_val);
 		}
+		//hw.PrintLine("");
 
         //wait 1 ms
         System::Delay(1);		
