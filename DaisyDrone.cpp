@@ -101,6 +101,15 @@ int main(void)
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
 	hw.StartAudio(audio_callback);
 
+/*
+	uint8_t pins[] = { 30, 29, 27, 26 };
+	for( uint8_t pin : pins )
+	{
+		dsy_gpio_pin gpio_pin = { DSY_GPIOA, pin };
+		dsy_gpio gpio = { gpio_pin, DSY_GPIO_MODE_INPUT, DSY_GPIO_NOPULL };
+		dsy_gpio_write( &gpio, true );
+	}*/
+
 	hw.PrintLine("Startup complete");
 
 	/*
