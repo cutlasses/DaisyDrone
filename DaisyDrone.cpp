@@ -5,6 +5,7 @@
 
 using namespace daisy;
 using namespace daisysp;
+using namespace daisy::seed;
 
 DaisySeed hw;
 
@@ -81,8 +82,6 @@ int main(void)
 	hw.Configure();
 	hw.Init();
 
-	hw.StartLog(true/*block until serial connection opened*/);
-
 	init_adc();
 
     //Set up oscillators
@@ -101,23 +100,20 @@ int main(void)
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
 	hw.StartAudio(audio_callback);
 
-/*
-	uint8_t pins[] = { 30, 29, 27, 26 };
-	for( uint8_t pin : pins )
+	Pin pins[] = { D30, D29, D27, D26, D25, D24, D23, D22 };
+	GPIO seven_seg[8];
+ 	for( int p = 0; p < 8; ++p )
 	{
-		dsy_gpio_pin gpio_pin = { DSY_GPIOA, pin };
-		dsy_gpio gpio = { gpio_pin, DSY_GPIO_MODE_INPUT, DSY_GPIO_NOPULL };
-		dsy_gpio_write( &gpio, true );
-	}*/
+		seven_seg[p].Init(pins[p], GPIO::Mode::OUTPUT, GPIO::Pull::NOPULL);
+	}
 
-	hw.PrintLine("Startup complete");
+	for( GPIO& gpio : seven_seg )
+	{
+		gpio.Write(true);
+	}
+	//hw.StartLog(true/*block until serial connection opened*/);
 
-	/*
-	oscillators[0].SetFreq(80);
-	oscillators[1].SetFreq(160);
-	oscillators[2].SetFreq(320);
-	oscillators[3].SetFreq(640);
-	oscillators[4].SetFreq(1280);*/
+	//hw.PrintLine("Startup complete");
 
 	while(1)
 	{	
