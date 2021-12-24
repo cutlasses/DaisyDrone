@@ -111,23 +111,39 @@ int main(void)
 	{
 		gpio.Write(true);
 	}
-	//hw.StartLog(true/*block until serial connection opened*/);
 
-	//hw.PrintLine("Startup complete");
+	// button D20
+	Switch button;
+	button.Init(D20);
 
+	int active_segment = 0;
 	while(1)
 	{	
-		//hw.Print("pots ");
 		for( int t = 0; t < NUM_TONES; ++t )
 		{
-			const float pot_val = hw.adc.GetFloat(t);
-
-			//hw.Print("%d ", int(pot_val*100));
-
-			oscillators[t].SetAmp(pot_val);
+			oscillators[t].SetAmp( hw.adc.GetFloat(t) );
 		}
-		//hw.PrintLine("");
 
+		button.Debounce();
+
+		if( button.FallingEdge() )
+		{
+			active_segment = (active_segment + 1) % 8;
+		}
+
+		for( int g = 0; g < 8; ++g )
+		{
+			GPIO& gpio = seven_seg[g];
+
+			if( g == active_segment )
+			{
+				gpio.Write(true);
+			}
+			else
+			{
+				gpio.Write(false);
+			}
+		}
         //wait 1 ms
         System::Delay(1);		
 	}
