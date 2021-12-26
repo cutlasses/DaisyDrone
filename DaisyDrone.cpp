@@ -9,9 +9,31 @@ using namespace daisy::seed;
 
 DaisySeed hw;
 
-const int NUM_TONES(5);
-const int pot_pins[NUM_TONES] = { 15, 16, 17, 18, 19 };
+constexpr int NUM_TONES(5);
+constexpr int pot_pins[NUM_TONES] = { 15, 16, 17, 18, 19 };
 Oscillator oscillators[NUM_TONES];
+
+struct ToneSet
+{
+	float	m_base_frequency;
+	char	m_note;
+	bool	m_is_sharp;
+};
+
+constexpr int NUM_TONE_SETS(12);
+ToneSet tones_sets[NUM_TONE_SETS] = {	{0.0f, 'A', false },
+										{0.0f, 'A', true },
+										{0.0f, 'B', false },
+										{0.0f, 'C', false },
+										{0.0f, 'C', true },
+										{0.0f, 'D', false },
+										{0.0f, 'D', true },
+										{0.0f, 'E', false },
+										{0.0f, 'F', false },
+										{0.0f, 'F', true },
+										{0.0f, 'G', false },
+										{0.0f, 'G', true } };
+
 
 class SevenSegmentDisplay
 {
@@ -39,7 +61,7 @@ public:
 	void set_byte_mask( char mask )
 	{
 		int bit = 1;
-		for( int p = 0; p < NUM_LEDS; ++p )
+		for( int p = 0; p < (NUM_LEDS-1); ++p ) // NUM_LEDS-1 because last led is the dot
 		{
 			GPIO& gpio = m_gpio_pins[p];
 			if( mask & bit )
@@ -64,6 +86,36 @@ public:
 				set_byte_mask(0b01110111);
 				break;
 			}
+			case 'B':
+			{
+				set_byte_mask(0b01111111);
+				break;
+			}
+			case 'C':
+			{
+				set_byte_mask(0b00111001);
+				break;
+			}
+			case 'D':
+			{
+				set_byte_mask(0b00111111);
+				break;
+			}
+			case 'E':
+			{
+				set_byte_mask(0b01111001);
+				break;
+			}
+			case 'F':
+			{
+				set_byte_mask(0b01110001);
+				break;
+			}
+			case 'G':
+			{
+				set_byte_mask(0b01111101);
+				break;
+			}				
 			default:
 			{
 				set_byte_mask(0);
@@ -165,14 +217,15 @@ int main(void)
 	hw.StartAudio(audio_callback);
 
 	SevenSegmentDisplay seven_seg( { D24, D25, D27, D29, D30, D23, D22, D26 } );
-	seven_seg.set_character( 'A' );
-	seven_seg.set_dot(true);
+	int current_tone_set = 0;
+	const ToneSet& tone_set = tones_sets[current_tone_set];
+	seven_seg.set_character( tone_set.m_note );
+	seven_seg.set_dot( tone_set.m_is_sharp );
 
 	// button D20
 	Switch button;
 	button.Init(D20);
 
-	int active_segment = 0;
 	while(1)
 	{	
 		for( int t = 0; t < NUM_TONES; ++t )
@@ -184,24 +237,13 @@ int main(void)
 
 		if( button.FallingEdge() )
 		{
-			active_segment = (active_segment + 1) % 8;
+			current_tone_set = (current_tone_set + 1) % NUM_TONE_SETS;
+
+			const ToneSet& tone_set = tones_sets[current_tone_set];
+			seven_seg.set_character( tone_set.m_note );
+			seven_seg.set_dot( tone_set.m_is_sharp );
 		}
 
-		/*
-		for( int g = 0; g < 8; ++g )
-		{
-			GPIO& gpio = seven_seg[g];
-
-			if( g == active_segment )
-			{
-				gpio.Write(true);
-			}
-			else
-			{
-				gpio.Write(false);
-			}
-		}
-		*/
         //wait 1 ms
         System::Delay(1);		
 	}
