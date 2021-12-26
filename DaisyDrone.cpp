@@ -21,18 +21,18 @@ struct ToneSet
 };
 
 constexpr int NUM_TONE_SETS(12);
-ToneSet tones_sets[NUM_TONE_SETS] = {	{0.0f, 'A', false },
-										{0.0f, 'A', true },
-										{0.0f, 'B', false },
-										{0.0f, 'C', false },
-										{0.0f, 'C', true },
-										{0.0f, 'D', false },
-										{0.0f, 'D', true },
-										{0.0f, 'E', false },
-										{0.0f, 'F', false },
-										{0.0f, 'F', true },
-										{0.0f, 'G', false },
-										{0.0f, 'G', true } };
+ToneSet tones_sets[NUM_TONE_SETS] = {	{55.0f, 'A', false },
+										{58.27f, 'A', true },
+										{61.74f, 'B', false },
+										{65.41f, 'C', false },
+										{69.30f, 'C', true },
+										{73.42f, 'D', false },
+										{77.78f, 'D', true },
+										{82.41f, 'E', false },
+										{87.31f, 'F', false },
+										{92.50f, 'F', true },
+										{98.00f, 'G', false },
+										{103.83, 'G', true } };
 
 
 class SevenSegmentDisplay
@@ -174,23 +174,6 @@ void set_tones(float base_frequency)
 		semitone				+= intervals[interval];
 		interval				= ( interval + 1 ) % NUM_INTERVALS;
 	}
-
-	/*
-	hw.PrintLine("Base Frequency %d", int(base_frequency * 100));
-
-	const int semitones[] = { 0, 3, 7, 12 };
-	
-	for( int t = 0; t < NUM_TONES; ++t )
-	{
-		const int semitone		= semitones[t];
-
-		const float freq_mult	= powf( 2.0f, semitone / 12.0f );
-		const float freq		= base_frequency * freq_mult;
-		oscillators[t].SetFreq(freq);
-
-		hw.PrintLine("%d %d %d", semitone, int(freq_mult * 100), int(freq * 100));
-	}
-	*/
 }
 
 int main(void)
@@ -221,6 +204,7 @@ int main(void)
 	const ToneSet& tone_set = tones_sets[current_tone_set];
 	seven_seg.set_character( tone_set.m_note );
 	seven_seg.set_dot( tone_set.m_is_sharp );
+	set_tones(tone_set.m_base_frequency);
 
 	// button D20
 	Switch button;
@@ -242,6 +226,8 @@ int main(void)
 			const ToneSet& tone_set = tones_sets[current_tone_set];
 			seven_seg.set_character( tone_set.m_note );
 			seven_seg.set_dot( tone_set.m_is_sharp );
+
+			set_tones(tone_set.m_base_frequency);
 		}
 
         //wait 1 ms
