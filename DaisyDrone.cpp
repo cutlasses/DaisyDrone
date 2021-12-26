@@ -159,8 +159,8 @@ void init_adc()
 
 void set_tones(float base_frequency)
 {
-	constexpr int NUM_INTERVALS(3);
-	const int intervals[NUM_INTERVALS] = { 3, 4, 5 };	// 3rd, 7th, octave
+	constexpr int NUM_INTERVALS(4);
+	const int intervals[NUM_INTERVALS] = { 12, 3, 4, 5 };	// ocatave, 3rd, 7th, octave
 	int interval = 0;
 	int semitone = 0;
 	for( int t = 0; t < NUM_TONES; ++t )
