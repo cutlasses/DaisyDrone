@@ -13,6 +13,70 @@ const int NUM_TONES(5);
 const int pot_pins[NUM_TONES] = { 15, 16, 17, 18, 19 };
 Oscillator oscillators[NUM_TONES];
 
+class SevenSegmentDisplay
+{
+	static constexpr int NUM_LEDS = 8;
+
+	std::array<GPIO, NUM_LEDS>		m_gpio_pins;
+
+public:
+
+	// Pins a,b,c,d,e,f,g,DP
+	SevenSegmentDisplay( const std::array<Pin, NUM_LEDS>& pins )
+	{
+		for( int p = 0; p < NUM_LEDS; ++p )
+		{
+			m_gpio_pins[p].Init(pins[p], GPIO::Mode::OUTPUT, GPIO::Pull::NOPULL);
+		}
+
+		// turn the leds off
+		for( GPIO& gpio : m_gpio_pins )
+		{
+			gpio.Write(false);
+		}	
+	}
+
+	void set_byte_mask( char mask )
+	{
+		int bit = 1;
+		for( int p = 0; p < NUM_LEDS; ++p )
+		{
+			GPIO& gpio = m_gpio_pins[p];
+			if( mask & bit )
+			{
+				gpio.Write(true);
+			}
+			else
+			{
+				gpio.Write(false);
+			}
+
+			bit <<= 1;
+		}
+	}
+
+	void set_character( char character )
+	{
+		switch(character)
+		{
+			case 'A':
+			{
+				set_byte_mask(0b01110111);
+				break;
+			}
+			default:
+			{
+				set_byte_mask(0);
+			}
+		}
+	}
+
+	void set_dot( bool set )
+	{
+		m_gpio_pins.back().Write(set);
+	}
+};
+
 
 void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
 {
@@ -100,17 +164,9 @@ int main(void)
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
 	hw.StartAudio(audio_callback);
 
-	Pin pins[] = { D30, D29, D27, D26, D25, D24, D23, D22 };
-	GPIO seven_seg[8];
- 	for( int p = 0; p < 8; ++p )
-	{
-		seven_seg[p].Init(pins[p], GPIO::Mode::OUTPUT, GPIO::Pull::NOPULL);
-	}
-
-	for( GPIO& gpio : seven_seg )
-	{
-		gpio.Write(true);
-	}
+	SevenSegmentDisplay seven_seg( { D24, D25, D27, D29, D30, D23, D22, D26 } );
+	seven_seg.set_character( 'A' );
+	seven_seg.set_dot(true);
 
 	// button D20
 	Switch button;
@@ -131,6 +187,7 @@ int main(void)
 			active_segment = (active_segment + 1) % 8;
 		}
 
+		/*
 		for( int g = 0; g < 8; ++g )
 		{
 			GPIO& gpio = seven_seg[g];
@@ -144,6 +201,7 @@ int main(void)
 				gpio.Write(false);
 			}
 		}
+		*/
         //wait 1 ms
         System::Delay(1);		
 	}
