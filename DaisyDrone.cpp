@@ -129,9 +129,29 @@ public:
 	}
 };
 
+float wave_fold( float in )
+{
+	const float sign = in > 0.0f ? 1.0 : -1.0f;
+	const float f = (in / 2.0f) - (std::round(in) / 2.0f);
+	return sign * 2.0f * std::abs(f);
+}
 
 void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
 {
+	/*
+	for (size_t i = 0; i < size; i++)
+	{
+		float osc_out = 0.0f;
+		for( int o = 0; o < NUM_TONES; ++o )
+		{
+			osc_out += oscillators[o].Process();
+		}
+		osc_out = wave_fold(osc_out);
+
+		out[0][i] = osc_out;
+		out[1][i] = osc_out;
+	}
+	*/
 	for (size_t i = 0; i < size; i++)
 	{
 		float osc_out = 0.0f;
