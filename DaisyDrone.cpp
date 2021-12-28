@@ -143,7 +143,7 @@ float sin_wave_fold( float in )
 
 void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
 {
-	/*
+	
 	for (size_t i = 0; i < size; i++)
 	{
 		float osc_out = 0.0f;
@@ -151,12 +151,14 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 		{
 			osc_out += oscillators[o].Process();
 		}
-		osc_out = triangular_wave_fold(osc_out);
+		//osc_out = triangular_wave_fold(osc_out);
+		osc_out = sin_wave_fold(osc_out);
 
 		out[0][i] = osc_out;
 		out[1][i] = osc_out;
 	}
-	*/
+	
+	/*
 	for (size_t i = 0; i < size; i++)
 	{
 		float osc_out = 0.0f;
@@ -169,6 +171,7 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 		out[0][i] = osc_out;
 		out[1][i] = osc_out;
 	}
+	*/
 }
 
 void init_adc()
