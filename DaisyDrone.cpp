@@ -129,11 +129,16 @@ public:
 	}
 };
 
-float wave_fold( float in )
+// https://www.desmos.com/calculator/ge2wvg2wgj
+float triangular_wave_fold( float in )
 {
-	const float sign = in > 0.0f ? 1.0 : -1.0f;
-	const float f = (in / 2.0f) - (std::round(in) / 2.0f);
-	return sign * 2.0f * std::abs(f);
+	const float q_in = in * 0.25f;
+	return 4 * (abs(q_in + 0.25f - roundf(q_in+0.25f))-0.25f);
+}
+
+float sin_wave_fold( float in )
+{
+	return sinf(in);
 }
 
 void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
@@ -146,7 +151,7 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 		{
 			osc_out += oscillators[o].Process();
 		}
-		osc_out = wave_fold(osc_out);
+		osc_out = triangular_wave_fold(osc_out);
 
 		out[0][i] = osc_out;
 		out[1][i] = osc_out;
