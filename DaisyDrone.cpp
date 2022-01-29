@@ -34,6 +34,15 @@ ToneSet tones_sets[NUM_TONE_SETS] = {	{55.0f, 'A', false },
 										{98.00f, 'G', false },
 										{103.83, 'G', true } };
 
+enum class WAVE_SUM_TYPE
+{
+	AVERAGE,
+	SINE_WAVE_FOLD,
+	TRIANGLE_WAVE_FOLD,
+};
+
+constexpr WAVE_SUM_TYPE sum_type = WAVE_SUM_TYPE::AVERAGE;
+
 
 class SevenSegmentDisplay
 {
@@ -151,27 +160,28 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 		{
 			osc_out += oscillators[o].Process();
 		}
-		//osc_out = triangular_wave_fold(osc_out);
-		osc_out = sin_wave_fold(osc_out);
 
-		out[0][i] = osc_out;
-		out[1][i] = osc_out;
-	}
-	
-	/*
-	for (size_t i = 0; i < size; i++)
-	{
-		float osc_out = 0.0f;
-		for( int o = 0; o < NUM_TONES; ++o )
+		switch(sum_type)
 		{
-			osc_out += oscillators[o].Process();
+			case WAVE_SUM_TYPE::AVERAGE:
+			{
+				osc_out /= NUM_TONES;
+				break;
+			}
+			case WAVE_SUM_TYPE::SINE_WAVE_FOLD:
+			{
+				osc_out = sin_wave_fold(osc_out);
+				break;
+			}
+			case WAVE_SUM_TYPE::TRIANGLE_WAVE_FOLD:
+			{
+				osc_out = triangular_wave_fold(osc_out);
+			}
 		}
-		osc_out /= NUM_TONES;
 
 		out[0][i] = osc_out;
 		out[1][i] = osc_out;
 	}
-	*/
 }
 
 void init_adc()
