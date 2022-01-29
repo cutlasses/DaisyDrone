@@ -175,9 +175,12 @@ public:
 			return base_frequency * freq_mult;
 		};
 
-		m_low_osc.SetFreq( semitone_to_frequency(semitone*0.98f) );
+		constexpr int cents = 2;
+		constexpr float cent_mult_low = 1.0f - (cents/100.0f);
+		constexpr float cent_mult_high = 1.0f - (cents/100.0f);
+		m_low_osc.SetFreq( semitone_to_frequency(semitone*cent_mult_low) );
 		m_base_osc.SetFreq( semitone_to_frequency(semitone) );
-		m_high_osc.SetFreq( semitone_to_frequency(semitone*1.02f) );
+		m_high_osc.SetFreq( semitone_to_frequency(semitone*cent_mult_high) );
 	}
 
 	float process()
