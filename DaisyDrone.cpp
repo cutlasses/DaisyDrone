@@ -11,7 +11,6 @@ DaisySeed hw;
 
 constexpr int NUM_TONES(5);
 constexpr int pot_pins[NUM_TONES] = { 15, 16, 17, 18, 19 };
-Oscillator oscillators[NUM_TONES];
 
 struct ToneSet
 {
@@ -138,6 +137,59 @@ public:
 	}
 };
 
+class DroneOscillator
+{
+	Oscillator		m_low_osc;
+	Oscillator		m_base_osc;
+	Oscillator		m_high_osc;
+	float			m_amplitude = 0.0f;
+
+public:
+
+	void initialise(float sample_rate)
+	{
+		auto init_osc =[sample_rate](Oscillator& osc)
+		{
+			osc.Init(sample_rate);
+			osc.SetWaveform(osc.WAVE_SIN);
+			osc.SetAmp(1.0f);
+		};
+
+		init_osc(m_low_osc);
+		init_osc(m_base_osc);
+		init_osc(m_high_osc);
+
+		m_amplitude				= 0.0f;
+	}
+
+	void set_amplitude(float a)
+	{
+		m_amplitude = a;
+	}
+
+	void set_semitone( float base_frequency, int semitone )
+	{
+		auto semitone_to_frequency = [base_frequency](float semitone)->float
+		{
+			const float freq_mult	= powf( 2.0f, semitone / 12.0f );
+			return base_frequency * freq_mult;
+		};
+
+		m_low_osc.SetFreq( semitone_to_frequency(semitone*0.98f) );
+		m_base_osc.SetFreq( semitone_to_frequency(semitone) );
+		m_high_osc.SetFreq( semitone_to_frequency(semitone*1.02f) );
+	}
+
+	float process()
+	{
+		const float avg_sin = (m_low_osc.Process() + m_base_osc.Process() + m_high_osc.Process() ) / 3;
+		//float avg_sin = m_base_osc.Process();
+		return avg_sin * m_amplitude;
+	}
+};
+
+DroneOscillator oscillators[NUM_TONES];
+
 // https://www.desmos.com/calculator/ge2wvg2wgj
 float triangular_wave_fold( float in )
 {
@@ -158,7 +210,7 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 		float osc_out = 0.0f;
 		for( int o = 0; o < NUM_TONES; ++o )
 		{
-			osc_out += oscillators[o].Process();
+			osc_out += oscillators[o].process();
 		}
 
 		switch(sum_type)
@@ -203,11 +255,7 @@ void set_tones(float base_frequency)
 	int semitone = 0;
 	for( int t = 0; t < NUM_TONES; ++t )
 	{
-		const float freq_mult	= powf( 2.0f, semitone / 12.0f );
-		const float freq		= base_frequency * freq_mult;
-		oscillators[t].SetFreq(freq);
-
-		hw.PrintLine("%d %d %d %d", semitone, interval, int(freq_mult * 100), int(freq * 100));
+		oscillators[t].set_semitone(base_frequency, semitone);
 
 		semitone				+= intervals[interval];
 		interval				= ( interval + 1 ) % NUM_INTERVALS;
@@ -223,11 +271,9 @@ int main(void)
 
     //Set up oscillators
 	const float sample_rate = hw.AudioSampleRate();
-	for( Oscillator& osc : oscillators )
+	for( DroneOscillator& osc : oscillators )
 	{
-		osc.Init(sample_rate);
-		osc.SetWaveform(osc.WAVE_SIN);
-		osc.SetAmp(0.0f);
+		osc.initialise(sample_rate);
 	}
 
 	//const float base_frequency = 65.41f; // C2
@@ -252,7 +298,7 @@ int main(void)
 	{	
 		for( int t = 0; t < NUM_TONES; ++t )
 		{
-			oscillators[t].SetAmp( hw.adc.GetFloat(t) );
+			oscillators[t].set_amplitude( hw.adc.GetFloat(t) );
 		}
 
 		button.Debounce();
