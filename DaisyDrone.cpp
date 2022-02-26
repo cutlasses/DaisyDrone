@@ -3,6 +3,7 @@
 #include "daisy_seed.h"
 #include "daisysp.h"
 
+
 using namespace daisy;
 using namespace daisysp;
 using namespace daisy::seed;
@@ -40,7 +41,7 @@ enum class WAVE_SUM_TYPE
 	TRIANGLE_WAVE_FOLD,
 };
 
-constexpr WAVE_SUM_TYPE sum_type = WAVE_SUM_TYPE::AVERAGE;
+constexpr WAVE_SUM_TYPE sum_type = WAVE_SUM_TYPE::TRIANGLE_WAVE_FOLD;
 
 
 class SevenSegmentDisplay
@@ -286,16 +287,19 @@ int main(void)
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
 	hw.StartAudio(audio_callback);
 
-	SevenSegmentDisplay seven_seg( { D24, D25, D27, D29, D30, D23, D22, D26 } );
+	SevenSegmentDisplay seven_seg( { D18, D19, D21, D22, D23, D17, D16, D20 } );
 	int current_tone_set = 0;
 	const ToneSet& tone_set = tones_sets[current_tone_set];
 	seven_seg.set_character( tone_set.m_note );
 	seven_seg.set_dot( tone_set.m_is_sharp );
 	set_tones(tone_set.m_base_frequency);
 
-	// button D20
-	Switch button;
-	button.Init(D20);
+	// button D15
+	//Switch button;
+	//button.Init(D15);
+
+	Encoder encoder;
+	encoder.Init(D6,D5,D15);
 
 	while(1)
 	{	
@@ -304,12 +308,24 @@ int main(void)
 			oscillators[t].set_amplitude( hw.adc.GetFloat(t) );
 		}
 
-		button.Debounce();
+		//button.Debounce();
+		encoder.Debounce();
+		const int inc = encoder.Increment();
 
-		if( button.FallingEdge() )
+		current_tone_set += inc;
+
+		if( current_tone_set > 0 )
 		{
-			current_tone_set = (current_tone_set + 1) % NUM_TONE_SETS;
+			current_tone_set = current_tone_set % NUM_TONE_SETS;
+		}
+		else if( current_tone_set < 0 )
+		{
+			current_tone_set = abs(current_tone_set) % NUM_TONE_SETS;
+			current_tone_set = NUM_TONE_SETS - current_tone_set;
+		}
 
+		if( inc != 0)
+		{
 			const ToneSet& tone_set = tones_sets[current_tone_set];
 			seven_seg.set_character( tone_set.m_note );
 			seven_seg.set_dot( tone_set.m_is_sharp );
