@@ -11,7 +11,7 @@ using namespace daisy::seed;
 DaisySeed hw;
 
 constexpr int NUM_TONES(5);
-constexpr int pot_pins[NUM_TONES] = { 15, 16, 17, 18, 19 };
+constexpr int pot_pins[NUM_TONES] = { 25, 16, 17, 18, 19 };
 
 struct ToneSet
 {
@@ -41,7 +41,7 @@ enum class WAVE_SUM_TYPE
 	TRIANGLE_WAVE_FOLD,
 };
 
-constexpr WAVE_SUM_TYPE sum_type = WAVE_SUM_TYPE::TRIANGLE_WAVE_FOLD;
+WAVE_SUM_TYPE sum_type = WAVE_SUM_TYPE::AVERAGE;
 
 
 class SevenSegmentDisplay
@@ -294,9 +294,13 @@ int main(void)
 	seven_seg.set_dot( tone_set.m_is_sharp );
 	set_tones(tone_set.m_base_frequency);
 
-	// button D15
-	//Switch button;
-	//button.Init(D15);
+	Switch sum_avg_switch;
+	Switch sum_sin_switch;
+	Switch sum_tri_switch;
+
+	sum_avg_switch.Init(D0);
+	sum_sin_switch.Init(D1);
+	sum_tri_switch.Init(D2);
 
 	Encoder encoder;
 	encoder.Init(D6,D5,D15);
@@ -305,10 +309,27 @@ int main(void)
 	{	
 		for( int t = 0; t < NUM_TONES; ++t )
 		{
-			oscillators[t].set_amplitude( hw.adc.GetFloat(t) );
+			const float pot_val = hw.adc.GetFloat(t);
+			oscillators[t].set_amplitude( pot_val );
 		}
 
-		//button.Debounce();
+		sum_avg_switch.Debounce();
+		sum_sin_switch.Debounce();
+		sum_tri_switch.Debounce();
+		if( sum_avg_switch.Pressed() )
+		{
+			sum_type = WAVE_SUM_TYPE::AVERAGE;
+		}
+		else if( sum_sin_switch.Pressed() )
+		{
+			sum_type = WAVE_SUM_TYPE::SINE_WAVE_FOLD;
+		}
+		else if( sum_tri_switch.Pressed() )
+		{
+			sum_type = WAVE_SUM_TYPE::TRIANGLE_WAVE_FOLD;
+		}
+
+		// use encoder to update tone set
 		encoder.Debounce();
 		const int inc = encoder.Increment();
 
