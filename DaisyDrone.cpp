@@ -10,8 +10,8 @@ using namespace daisy::seed;
 
 DaisySeed hw;
 
-constexpr int NUM_TONES(5);
-constexpr int pot_pins[NUM_TONES] = { 25, 16, 17, 18, 19 };
+constexpr int NUM_TONES(6);
+constexpr int pot_pins[NUM_TONES] = { 17, 18, 19, 20, 21, 22 };
 
 struct ToneSet
 {
@@ -287,7 +287,7 @@ int main(void)
 	// NOTE: AGND and DGND must be connected for audio and ADC to work
 	hw.StartAudio(audio_callback);
 
-	SevenSegmentDisplay seven_seg( { D18, D19, D21, D22, D23, D17, D16, D20 } );
+	SevenSegmentDisplay seven_seg( { D24, D25, D27, D28, D29, D23, D30, D26 } );
 	int current_tone_set = 0;
 	const ToneSet& tone_set = tones_sets[current_tone_set];
 	seven_seg.set_character( tone_set.m_note );
@@ -298,12 +298,12 @@ int main(void)
 	Switch sum_sin_switch;
 	Switch sum_tri_switch;
 
-	sum_avg_switch.Init(D0);
+	sum_avg_switch.Init(D2);
 	sum_sin_switch.Init(D1);
-	sum_tri_switch.Init(D2);
+	sum_tri_switch.Init(D0);
 
 	Encoder encoder;
-	encoder.Init(D6,D5,D15);
+	encoder.Init(D6,D5,D3);
 
 	while(1)
 	{	

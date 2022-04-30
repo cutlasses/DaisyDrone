@@ -11,3 +11,7 @@ DAISYSP_DIR = ../../Documents/Daisy/DaisyExamples/daisysp/
 # Core location, and generic Makefile.
 SYSTEM_FILES_DIR = $(LIBDAISY_DIR)/core
 include $(SYSTEM_FILES_DIR)/Makefile
+
+ifeq ($(DEBUG), 1)
+	OPT = -Og
+endif
