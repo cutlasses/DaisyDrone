@@ -11,7 +11,8 @@ using namespace daisy::seed;
 DaisySeed hw;
 
 constexpr int NUM_TONES(6);
-constexpr int pot_pins[NUM_TONES] = { 17, 18, 19, 20, 21, 22 };
+constexpr int NUM_POTS(NUM_TONES+2);	// tones pots plus 2 additional parameter pots
+constexpr int pot_pins[NUM_POTS] = { 17, 18, 19, 20, 21, 22, 16, 15 };
 
 struct ToneSet
 {
@@ -193,6 +194,7 @@ public:
 };
 
 DroneOscillator oscillators[NUM_TONES];
+float gain = 0.0f;
 
 // https://www.desmos.com/calculator/ge2wvg2wgj
 float triangular_wave_fold( float in )
@@ -208,7 +210,6 @@ float sin_wave_fold( float in )
 
 void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, size_t size)
 {
-	
 	for (size_t i = 0; i < size; i++)
 	{
 		float osc_out = 0.0f;
@@ -235,6 +236,8 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 			}
 		}
 
+		osc_out *= gain;
+		
 		out[0][i] = osc_out;
 		out[1][i] = osc_out;
 	}
@@ -242,12 +245,12 @@ void audio_callback(AudioHandle::InputBuffer in, AudioHandle::OutputBuffer out, 
 
 void init_adc()
 {
-	AdcChannelConfig adc_config[NUM_TONES];
-	for( int t = 0; t < NUM_TONES; ++t )
+	AdcChannelConfig adc_config[NUM_POTS];
+	for( int t = 0; t < NUM_POTS; ++t )
 	{
 		adc_config[t].InitSingle(hw.GetPin(pot_pins[t]));
 	}
-	hw.adc.Init(adc_config, NUM_TONES);
+	hw.adc.Init(adc_config, NUM_POTS);
     hw.adc.Start();
 }
 
@@ -312,6 +315,9 @@ int main(void)
 			const float pot_val = hw.adc.GetFloat(t);
 			oscillators[t].set_amplitude( pot_val );
 		}
+
+		//const float pot1_val = hw.adc.GetFloat(NUM_TONES);
+		gain = hw.adc.GetFloat(NUM_TONES+1);
 
 		sum_avg_switch.Debounce();
 		sum_sin_switch.Debounce();
