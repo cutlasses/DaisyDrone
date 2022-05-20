@@ -317,7 +317,7 @@ int main(void)
 		}
 
 		//const float pot1_val = hw.adc.GetFloat(NUM_TONES);
-		gain = hw.adc.GetFloat(NUM_TONES+1);
+		gain = 1.0f -hw.adc.GetFloat(NUM_TONES+1);
 
 		sum_avg_switch.Debounce();
 		sum_sin_switch.Debounce();
