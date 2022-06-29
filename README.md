@@ -11,5 +11,5 @@ DaisyDrone is a drone synth, with 6 sliders, Inspired by @hainbach101 ‘s use o
 BOM
 
  Component | Part | Quantity | Link
---- | --- | ---
+--- | --- | --- | ---
 Device_Audio_Electrosmith_Daisy_Seed_Rev4 | Daisy Seed | 1 | https://www.elevatorsound.com/product/electrosmith-daisy-seed-development-board/
