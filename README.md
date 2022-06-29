@@ -10,6 +10,10 @@ DaisyDrone is a drone synth, with 6 sliders, Inspired by @hainbach101 ‘s use o
 
 BOM
 
- Component | Part | Quantity | Link
+ Reference | Part | Quantity | Link
 --- | --- | --- | ---
 Device_Audio_Electrosmith_Daisy_Seed_Rev4 | Daisy Seed | 1 | https://www.elevatorsound.com/product/electrosmith-daisy-seed-development-board/
+R1-R9 | 1K 0805 resistor | 8 | TODO
+R9-R10 | 4K7 0805 resistor | 2 | TODO
+SLIDER_1-SLIDER_6 | Bourns_PTA4543_Single_Slide | 6 | TODO
+SW1 | Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm | 1 | TODO
