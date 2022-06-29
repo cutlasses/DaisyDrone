@@ -15,5 +15,9 @@ BOM
 Device_Audio_Electrosmith_Daisy_Seed_Rev4 | Daisy Seed | 1 | https://www.elevatorsound.com/product/electrosmith-daisy-seed-development-board/
 R1-R9 | 1K 0805 resistor | 8 | TODO
 R9-R10 | 4K7 0805 resistor | 2 | TODO
+POT_1 | NOT USED | 0 | -
+POT_2 | Alpha pot | 1 | Thonk 
 SLIDER_1-SLIDER_6 | Bourns_PTA4543_Single_Slide | 6 | TODO
 SW1 | Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm | 1 | TODO
+U1 | Display_Character:D168K | 1 | TODO
+J2 | MJ-3536 audio socket | 1 | -
