@@ -30,12 +30,12 @@ BOM
 --- | --- | --- | ---
 Device_Audio_Electrosmith_Daisy_Seed_Rev4 | Daisy Seed | 1 | https://www.elevatorsound.com/product/electrosmith-daisy-seed-development-board/
 R1-R8 | 1K 0805 resistor | 7 | https://octopart.com/erj-p06j102v-panasonic-39823360?r=sp
-R9-R10 | 4K7 0805 resistor [NOT USED] | 2 | https://octopart.com/crgcq0805j4k7-te+connectivity-91018232?r=sp
+R9-R10 | 4K7 0805 resistor [NOT USED] | 0 | https://octopart.com/crgcq0805j4k7-te+connectivity-91018232?r=sp
 POT_1 | 10K Alpha pot [NOT USED] | 0 |  https://www.thonk.co.uk/shop/alpha-9mm-pots/
 POT_2 | 10K Alpha pot | 1 | https://www.thonk.co.uk/shop/alpha-9mm-pots/
 SLIDER_1-SLIDER_6 | Bourns_PTA4543_Single_Slide | 6 | https://octopart.com/pta4543-2015dpb103-bourns-10485577?r=sp
 SW1 | Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm | 1 | https://octopart.com/pec11r-4015f-n0024-bourns-26648251?r=sp
 S1 | OS103012MU2QP1 | 1 | https://octopart.com/os103012mu2qp1-c%26k+components-2486960?r=sp
 U1 | Display_Character:D168K | 1 | 7 segment Cathode Display
-AUDIO_IN_L | MJ-3536 audio socket [NOT USED] | 1 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
+AUDIO_IN_L | MJ-3536 audio socket [NOT USED] | 0 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
 AUDIO_OUT_L | MJ-3536 audio socket | 1 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
