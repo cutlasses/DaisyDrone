@@ -23,6 +23,7 @@ Build Notes:
 5. It is advisable to install the Daisy Seed with Female Header, so you can remove it and use it on other projects
 6. Daisy Seed needs programming via JTAG, not via USB, as the USB pins are used.
 7. Most values of potentiometer (pot) should be fine, I use 10K, but if you have some 20Ks, 50Ks etc, you can use those.
+8. I use M3 stand-offs with M3 bolts to raise the PCB above the desk
 
 BOM
 
@@ -40,3 +41,4 @@ S1 | OS103012MU2QP1 | 1 | https://octopart.com/os103012mu2qp1-c%26k+components-2
 U1 | Display_Character:D168K | 1 | 7 segment Cathode Display
 AUDIO_IN_L | MJ-3536 audio socket [NOT USED] | 0 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
 AUDIO_OUT_L | MJ-3536 audio socket | 1 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
+
