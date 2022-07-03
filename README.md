@@ -29,8 +29,9 @@ BOM
  Reference | Part | Quantity | Link
 --- | --- | --- | ---
 Device_Audio_Electrosmith_Daisy_Seed_Rev4 | Daisy Seed | 1 | https://www.elevatorsound.com/product/electrosmith-daisy-seed-development-board/
-R1-R8 | 1K 0805 resistor | 7 | https://octopart.com/erj-p06j102v-panasonic-39823360?r=sp
+R1-R8 | 1K 0805 resistor | 8 | https://octopart.com/erj-p06j102v-panasonic-39823360?r=sp
 R9-R10 | 4K7 0805 resistor [NOT USED] | 0 | https://octopart.com/crgcq0805j4k7-te+connectivity-91018232?r=sp
+GND_LNK | 0R 0805 resistor | 0 | (Can also use a small piece of wire of solder)
 POT_1 | 10K Alpha pot [NOT USED] | 0 |  https://www.thonk.co.uk/shop/alpha-9mm-pots/
 POT_2 | 10K Alpha pot | 1 | https://www.thonk.co.uk/shop/alpha-9mm-pots/
 SLIDER_1-SLIDER_6 | Bourns_PTA4543_Single_Slide | 6 | https://octopart.com/pta4543-2015dpb103-bourns-10485577?r=sp
