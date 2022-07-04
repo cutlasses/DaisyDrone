@@ -44,4 +44,8 @@ AUDIO_OUT_L | MJ-3536 audio socket | 1 | https://octopart.com/mj-3536-cui+device
 
 ![Daisy Drone Top Down](https://github.com/cutlasses/DaisyDrone/blob/main/Hardware/IMG_5485.jpeg "Daisy Drone Top Down")
 
+![Daisy Drone Left](https://github.com/cutlasses/DaisyDrone/blob/main/Hardware/IMG_5486.jpeg "Daisy Drone Left")
+
+![Daisy Drone Right](https://github.com/cutlasses/DaisyDrone/blob/main/Hardware/IMG_5487.jpeg "Daisy Drone Right")
+
 
