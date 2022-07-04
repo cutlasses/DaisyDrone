@@ -42,3 +42,6 @@ U1 | Display_Character:D168K | 1 | 7 segment Cathode Display
 AUDIO_IN_L | MJ-3536 audio socket [NOT USED] | 0 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
 AUDIO_OUT_L | MJ-3536 audio socket | 1 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
 
+![Daisy Drone Top Down](https://github.com/cutlasses/DaisyDrone/blob/main/Hardware/IMG_5485.jpeg "Daisy Drone Top Down")
+
+
