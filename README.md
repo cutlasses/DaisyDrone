@@ -39,7 +39,7 @@ POT_2 | 10K Alpha pot | 1 | https://www.thonk.co.uk/shop/alpha-9mm-pots/
 SLIDER_1-SLIDER_6 | Bourns_PTA4543_Single_Slide | 6 | https://octopart.com/pta4543-2015dpb103-bourns-10485577?r=sp
 SW1 | Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm | 1 | https://octopart.com/pec11r-4015f-n0024-bourns-26648251?r=sp
 S1 | OS103012MU2QP1 | 1 | https://octopart.com/os103012mu2qp1-c%26k+components-2486960?r=sp
-U1 | Display_Character:D168K | 1 | 7 segment Cathode Display
+U1 | 7 segment Cathode Display | 1 | https://octopart.com/157142v12703-wurth+elektronik-119894004
 AUDIO_IN_L | MJ-3536 audio socket [NOT USED] | 0 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
 AUDIO_OUT_L | MJ-3536 audio socket | 1 | https://octopart.com/mj-3536-cui+devices-106233900?r=sp
 
