@@ -21,8 +21,8 @@ Build Notes:
 3. On the PCB the pots and encoders aren't marked. The encoder is the one nearest the output jacks. To the left of that is the pot that is setup to control master volume. The pot to the left of that is currently unassigned.
 4. Components marked [NOT USED] can be left unpopulated. They are there for future protoyping (audio in, I2C interface, extra pot)
 5. It is advisable to install the Daisy Seed with Female Header, so you can remove it and use it on other projects
-6. Daisy Seed needs programming via JTAG, not via USB, as the USB pins are used. https://www.electro-smith.com/daisy/stlink-v3mini
-7. You will need to install the Daisy C++ toolchain to compile the code, here is a video walkthrough https://www.youtube.com/watch?v=e4KaBs6qSkU
+6. If you install the Daisy Seed with Femal Headers, you can remove it and program it via USB. you can also program it prior to mounting onto the PCB. otherwise you will need to program it via JTAG, as the USB pins are used. you can use this to program it via JTAG: https://www.electro-smith.com/daisy/stlink-v3mini
+7. You will need to install the Daisy C++ toolchain to compile the code, here is a video walkthrough https://www.youtube.com/watch?v=e4KaBs6qSkU . note that you will need to use an old version of the ARM toolchain (more info here: https://github.com/electro-smith/DaisyWiki/issues/33 )
 8. Most values of potentiometer (pot) should be fine, I use 10K, but if you have some 20Ks, 50Ks etc, you can use those.
 9. I use M3 stand-offs with M3 bolts to raise the PCB above the desk
 
