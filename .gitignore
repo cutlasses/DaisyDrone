@@ -52,3 +52,4 @@ build/DaisyDrone.bin
 build/DaisyDrone.d
 build/startup_stm32h750xx.d
 build/startup_stm32h750xx.o
+.DS_Store
