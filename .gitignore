@@ -1,8 +1,5 @@
 
-*.bin
-*.elf
 *.lst
-*.map
 build/DaisyDrone.bin
 build/DaisyDrone.elf
 build/DaisyDrone.hex
