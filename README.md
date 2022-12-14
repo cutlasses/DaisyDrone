@@ -23,7 +23,7 @@ Build Notes:
 5. It is advisable to install the Daisy Seed with Female Header, so you can remove it and use it on other projects
 6. Due to the USB pins being used on the DaisyDrone PCB, you either need to program via USB with the Daisy *unattached* to the PCB, or the Daisy Seed needs programming via JTAG on the board. https://www.electro-smith.com/daisy/stlink-v3mini
 7. You will need to install the Daisy C++ toolchain to compile the code, here is a video walkthrough https://www.youtube.com/watch?v=e4KaBs6qSkU
-8. You need to change LIBDAISY_DIR and DAISYSP_DIR to point to where you installed DaisyExamples
+8. For the paths to work correctly you should install DaisyDrone code in the alongside DaisyExamples (i.e. in the same folder as DaisyExamples lives)
 9. Most values of potentiometer (pot) should be fine, I use 10K, but if you have some 20Ks, 50Ks etc, you can use those.
 10. I use M3 stand-offs with M3 bolts to raise the PCB above the desk
 
